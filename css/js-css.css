@@ -1,0 +1,131 @@
+*
+{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body 
+{
+    padding:0;
+    margin:0;
+}
+.border{
+    border: 2px solid #bfbfbf;
+    padding: 5px;
+    /* display:flex;
+    justify-content: space-between; */
+    margin-left: 20%;
+    margin-top: 2%;
+    border-radius: 6px;
+    width:70%;
+}
+.personal{
+    border: 1px solid  #bfbfbf;
+    width:80%;
+    padding: 5px;
+    margin-left: 10%;
+    margin-bottom: 3px;
+    border-radius: 6px;
+}
+.education{
+    border: 1px solid  #bfbfbf;
+    width:80%;
+    padding: 5px;
+    margin-left: 10%;
+    margin-bottom: 3px;
+    border-radius: 6px;
+}
+.login{
+    border: 1px solid  #bfbfbf;
+    width:80%;
+    padding: 5px;
+    margin-left: 10%;
+    margin-bottom: 3px;
+    border-radius: 6px;
+}
+.heading{
+    text-align: center;
+}
+.space{
+    border-radius: 4px;
+    width: 50%;;
+    border: 1px solid  #bfbfbf;
+} 
+.common{
+    width: 7%;
+}
+.name .address .bday .border .color .course .driving .education .email .first .fname .gardening .gender{
+    padding: 30px;
+}
+.gap input{
+    width:20%;
+}
+.fname{
+    border: 1px solid blue;
+}
+.first {
+    width: 30%;
+}
+.button{
+    background-color:cornflowerblue;
+    border-radius: 4px;
+    border: 1px solid cornflowerblue ;
+    margin-left: 280px;
+}
+ /* .space{
+     margin-right: 10px; 
+    padding: 10px;
+    margin-bottom: 5px; */
+
+.name .space{
+    margin-right: 30px;
+}
+.address .space{
+    margin-right: 30px;
+}
+.name .space{
+    margin-right: 30px;
+}
+.gender .space{
+    margin-right: 30px;
+}
+.email .space{
+    margin-right: 30px;
+}
+.mobile .space{
+    margin-right: 30px;
+}
+.color .space{
+    margin-right: 30px;
+}
+.mark .space{
+    margin-right: 30px;
+}
+.hobby .space{
+    margin-right: 30px;
+}
+.reading .space{
+    margin-right: 30px;
+}
+.driving .space{
+    margin-right: 30px;
+}
+.gardening .space{
+    margin-right: 30px;
+}
+.bday .space{
+    margin-right: 30px;
+}
+.course .space{
+    margin-right: 30px;
+}
+.range .space{
+    margin-right: 30px;
+}
+.login .space{
+    margin-right: 30px;
+}
+.user .space{
+    margin-right: 30px;
+}
+
+
