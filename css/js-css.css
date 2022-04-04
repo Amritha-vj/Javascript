@@ -1,5 +1,6 @@
 *
 {
+    font-size: 12px;
     box-sizing: border-box;
     font-family: sans-serif;
 }
@@ -7,6 +8,13 @@ body
 {
     padding:0;
     margin:0;
+}
+input {
+    border: 1px solid grey;
+    border-radius: 4px;
+    /* width: 60%; */
+    margin: 2px;
+    padding: 3px;
 }
 .border{
     border: 2px solid #bfbfbf;
@@ -18,25 +26,105 @@ body
     border-radius: 6px;
     width:70%;
 }
-.personal{
-    border: 1px solid  #bfbfbf;
-    width:80%;
+.user {
+    
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.pass-1 {
+    
+    margin-bottom: 15px;
+}
+.pass-2{
+   
+}
+.row-2 {
+    
     padding: 5px;
+}
+.name {
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+.row-4{
+    padding:5px;
+}
+.course{
+    margin-bottom: 5px;
+}
+.percentage{
+    margin-bottom: 5px;
+}
+.gpa{
+    margin-bottom: 5px;
+}.upload{
+    margin-bottom: 5px;
+}
+.column-1 {
+    margin-bottom: 13px;
+}
+.column-2 {
+    margin-bottom: 20px;
+}
+.column-3 {
+    margin-bottom: 20px;
+}
+.column-4{
+    margin-bottom: 5px;
+}
+.personal {
+    border: 1px solid #bfbfbf;
+    width: 60%;
+    padding: 20px;
     margin-left: 10%;
     margin-bottom: 3px;
     border-radius: 6px;
 }
 .education{
     border: 1px solid  #bfbfbf;
-    width:80%;
+    width:60%;
+    /* display: flex;
+    justify-content: space-between; */
     padding: 5px;
     margin-left: 10%;
     margin-bottom: 3px;
     border-radius: 6px;
 }
+.rows-1{
+    padding: 5px;
+}
+.rows{
+    padding: 5px;
+}
+.general{
+    display: flex;
+    padding: 5px;
+    /* justify-content: space-between; */
+}
+.details {
+    display: flex;
+}
+.row-3{
+    display: flex; 
+    /* justify-content: space-between; */
+}
+.address{
+    margin-bottom: 5px;
+}
+.address-1{
+    margin-bottom: 5px;
+}
+.col-1 {
+    padding: 5px;
+    padding-left: 15px;
+}
+.col-2 {
+    padding: 5px;
+    margin-left: 103px;
+}
 .login{
     border: 1px solid  #bfbfbf;
-    width:80%;
+    width:60%;
     padding: 5px;
     margin-left: 10%;
     margin-bottom: 3px;
@@ -65,9 +153,11 @@ body
 .first {
     width: 30%;
 }
-.button{
+button{
     background-color:cornflowerblue;
     border-radius: 4px;
+    width: 90px;
+    padding: 10px 10px;
     border: 1px solid cornflowerblue ;
     margin-left: 280px;
 }
@@ -76,40 +166,53 @@ body
     padding: 10px;
     margin-bottom: 5px; */
 
-.name .space{
+.name {
+        margin-right: 30px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .address-1{
+        margin-bottom: 5px;
+    }
+    .address {
+        margin-right: 30px;
+        margin-bottom: 77px;
+    }
+.name{
     margin-right: 30px;
 }
-.address .space{
+.gender {
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+.email {
+    margin-right: 30px;
+    margin-bottom: 22px;
+}
+.mobile {
+    margin-right: 30px;
+    margin-bottom: 22px;
+}
+.color {
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+.mark {
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+.hobby {
+    margin-right: 30px;
+    margin-bottom: 22px;
+}
+.reading{
+    margin-right: 30px;
+    
+}
+.driving {
     margin-right: 30px;
 }
-.name .space{
-    margin-right: 30px;
-}
-.gender .space{
-    margin-right: 30px;
-}
-.email .space{
-    margin-right: 30px;
-}
-.mobile .space{
-    margin-right: 30px;
-}
-.color .space{
-    margin-right: 30px;
-}
-.mark .space{
-    margin-right: 30px;
-}
-.hobby .space{
-    margin-right: 30px;
-}
-.reading .space{
-    margin-right: 30px;
-}
-.driving .space{
-    margin-right: 30px;
-}
-.gardening .space{
+.gardening {
     margin-right: 30px;
 }
 .bday .space{

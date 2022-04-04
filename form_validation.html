@@ -5,16 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/js-css.css">
 	<script src="js/icon.js"></script>
-	<link rel="icon" type="image/x-icon" href="gicon.jpg">
+    <script src="js/new.js"></script> 
+	<!-- <link rel="icon" type="image/x-icon" href="gicon.jpg"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript</title>
 </head>
 <body>
+   
     <div class="border">
         <div class="heading">
            <h1>REGISTRATION FORM</h1> 
         </div>
-        <form>
+        <form action="#" name="myForm" onsubmit="validateForm()" id="submit">
             <div class="personal">
                 <h2>
                     Personal Details
@@ -49,7 +51,8 @@
                             <label for="address" class="space">Address</label>
                         </span>
                         <span>
-                            <input type="text" id="address" name="address">
+                            <textarea name="address"></textarea>
+                            <!-- <input type="textarea" id="address" name="address"> -->
                         </span>
                     </div><br>
                     <div>
@@ -60,14 +63,7 @@
                             <input type="email" id="email" name="email">
                         </span>
                     </div><br>
-                    <!-- <div>
-                        <span class="">
-                            <label for="password" class="space">Paasword</label>
-                        </span>
-                        <span>
-                            <input type="password" id="password" name="password">
-                        </span>
-                    </div> -->
+                   
                     <div>
                         <span class="mobile">
                             <label for="mob" class="space">Mobile Number</label>
@@ -77,27 +73,27 @@
                         </span>
                     </div><br>
                     
-                    <div>
-                        <span class="hobby">
+                    <div class="hobby">
+                        <span class="hobby1">
                             <label for="hobbies" class="space"> Choose hobbies</label>
                         </span>
                         <span>
-                            <input type="checkbox" id="read" name="read" class="common">
+                            <input type="checkbox" id="read" name="read">
                         </span>
                         <span class="reading">
                             <label for="read"> Reading</label>
                         </span>
                         <span>
-                            <input type="checkbox" id="drive" name="drive" class="common">
+                            <input type="checkbox" id="drive" name="drive">
                         </span>
                         <span class="driving">
                             <label for="drive">Driving</label>
                         </span>
                         <span>
-                            <input type="checkbox" id="garden" name="garden" class="common">
+                            <input type="checkbox" id="garden" name="garden">
                         </span>
                         <span class="gardening">
-                            <label for="vehicle2">Gardening</label>
+                            <label for="gardening">Gardening</label>
                         </span>
                     </div><br>
                     <div class="bday">
@@ -111,32 +107,28 @@
             </div>
             <div class="education">
                 <h3>Educational details</h3>
-                <div class="course">
-                    <label for="courses" class="space">Choose a courses:</label>
-                    <select id="courses" name="courses">
-                    <option value="c-1">M.Tech</option>
-                    <option value="c-2">M.Sc</option>
-                    <option value="c-3">MCA</option>
-                    <option value="c-4">B.Tech</option>
-                    <option value="c-5">B.Sc</option>
-                    <option value="c-6">BCA</option>
-                    <option value="c-7">Diploma</option>
-                    <option value="c-8">Plus Two</option>
-                    </select>
-                </div><br>
-                <div class="mark" class="space">
-                    <span>
+                <div class="sample">
+
+                </div>
+               
+                <!-- <div class="mark" class="space">
+                    
                         Percentage of marks
                     </span>
                     <span>
-                        <input type="text" id="mob" name="mob">
+                       
                     </span>
                 </div><br>
                 <div class="range" class="space">
                     <label for="point">Rate your programming level(out of 10):</label>
-                    <input type="range" id="vol" name="vol" min="0" max="10">
-                </div>   <br> 
-            </div>
+                    
+                </div>   <br>
+                <div class="file">
+                    <label for="filename">Upload CV</label>
+                   
+                    
+                </div> 
+            </div> -->
             <div class="login" class="space">
                 <h3>
                     Login credentials
@@ -166,8 +158,9 @@
                       </span>
                 </div> <br>     
             </div> 
-            <input type="submit" class="button" value="Submit">
+            <button type="submit" id="submit" class="button" value="Submit">Submit</button>
         </form>
-    </div>  
+    </div> 
+    
 </body>
 </html>

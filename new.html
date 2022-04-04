@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/js-css.css">
+	<script src="js/icon.js"></script>
+    <script src="js/new.js"></script> 
+	<!-- <link rel="icon" type="image/x-icon" href="gicon.jpg"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+   
+    <div class="border">
+        <div class="heading">
+           <h1>REGISTRATION FORM</h1> 
+        </div>
+        <form action="#" name="myForm" onsubmit="validateForm()" id="submit">
+            <div class="personal">
+                <h2>
+                    Personal Details
+                </h2>
+                <div class="general">
+                    <div class="rows-1">
+                        <div class="name">
+                            <label for="fname"class="space">Name:</label>
+                        </div>
+                        <div class="gender">
+                            <label for="gender" >Gender</label>
+                        </div>
+                        <div class="address">
+                            <label for="address" class="adress-1">Address</label>
+                        </div>
+                        <div class="email">
+                            <label for="email" >Email</label>
+                        </div>
+                        <div class="mobile">
+                            <label for="mob">Mobile Number</label>
+                        </div>
+                        <div class="hobby">
+                            <label for="hobbies" > Choose hobbies</label>
+                        </div>
+                        <div class="bday">
+                            <label for="birthday" >Date of Birth</label>
+                        </div>
+                        <div class="color">
+                            <label for="favcolor">Select your favorite color:</label>
+                        </div>
+                    </div>
+                    <div class=rows>
+                        <div class="name">
+                            <input type="text" id="fname" name="fname" class="first">
+                        </div>
+                        <div class="gender">
+                            <span>
+                                <input type="radio" id="male" name="male" value="Male" class="common">
+                                <label for="html">Male</label>
+                                <input type="radio" id="female" name="female" value="Female" class="common">
+                                <label for="female">Female</label>
+                                <input type="radio" id="others" name="others" value="Others" class="common">
+                                <label for="others">Others</label>
+                            </span>               
+                        </div>
+                        <div class="address">
+                            <textarea name="address-1"rows="4" cols="22"></textarea>
+                        </div>
+                        <div class="email">
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="mobile">
+                            <input type="text" id="mob" name="mob">
+                        </div>
+                        <div class="hobby">
+                            <span>
+                                <input type="checkbox" id="read" name="read">
+                                <label for="read"> Reading</label>
+                                <input type="checkbox" id="drive" name="drive">
+                                <label for="drive">Driving</label>
+                                <input type="checkbox" id="garden" name="garden">
+                                <label for="garden"> Gardening</label>
+
+                            </span>
+                        </div>
+                        <div class="bday">
+                            <input type="date" id="birthday" name="birthday">
+                        </div>
+                        <div class="color">
+                            <input type="color" id="favcolor" name="favcolor">
+                        </div>
+                    </div>
+                </div>
+            </div>
+               
+
+
+
+
+                <!-- <div>
+                    <span class="name">
+                      <label for="fname"class="space">Name:</label>
+                    </span>
+                    <span>
+                      <input type="text" id="fname" name="fname" class="first">
+                    </span>
+                 </div><br>
+                 <div>
+                    <span class="gender">
+                        <label for="gender" class="space">Gender</label>
+                    </span>
+                      <span>
+                        <input type="radio" id="male" name="male" value="Male" class="common">
+                        <label for="html">Male</label>
+                      </span>
+                      <span>
+                        <input type="radio" id="female" name="female" value="Female" class="common">
+                        <label for="female">Female</label>
+                      </span>
+                      <span>
+                        <input type="radio" id="others" name="others" value="Others" class="common">
+                        <label for="others">Others</label>
+                      </span>
+                   </div><br>
+                    <div>
+                        <span class="address">
+                            <label for="address" class="space">Address</label>
+                        </span>
+                        <span>
+                            <textarea name="address"></textarea>
+                            <input type="textarea" id="address" name="address"> 
+                        </span>
+                    </div><br>
+                    <div>
+                        <span class="email">
+                            <label for="email" class="space">Email</label>
+                        </span>
+                        <span>
+                            <input type="email" id="email" name="email">
+                        </span>
+                    </div><br>
+                   
+                    <div>
+                        <span class="mobile">
+                            <label for="mob" class="space">Mobile Number</label>
+                        </span>
+                        <span>
+                            <input type="text" id="mob" name="mob">
+                        </span>
+                    </div><br>
+                    
+                    <div class="hobby">
+                        <span class="hobby1">
+                            <label for="hobbies" class="space"> Choose hobbies</label>
+                        </span>
+                        <span>
+                            <input type="checkbox" id="read" name="read">
+                        </span>
+                        <span class="reading">
+                            <label for="read"> Reading</label>
+                        </span>
+                        <span>
+                            <input type="checkbox" id="drive" name="drive">
+                        </span>
+                        <span class="driving">
+                            <label for="drive">Driving</label>
+                        </span>
+                        <span>
+                            <input type="checkbox" id="garden" name="garden">
+                        </span>
+                        <span class="gardening">
+                            <label for="gardening">Gardening</label>
+                        </span>
+                    </div><br>
+                    <div class="bday">
+                        <label for="birthday" class="space">Date of Birth</label>
+                        <input type="date" id="birthday" name="birthday">
+                    </div><br>
+                    <div class="color">
+                        <label for="favcolor" class="gap">Select your favorite color:</label>
+                        <input type="color" id="favcolor" name="favcolor"><br><br>
+                    </div><br>
+            </div> -->
+
+
+            <div class="education">
+                <h3>Educational details</h3>
+                <div class="details">
+                    <div class="row-2">
+                        <div class="column-1">
+                            <label for="courses" class="space">Choose a courses:</label>
+                        </div>
+                        <div class="column-2">
+                            Percentage of marks
+                        </div>
+                        <div class="column-3">
+                            <label for="point">Rate your programming level(out of 10):</label>
+                        </div>
+                        <div class="column-4">
+                            <label for="filename">Upload CV</label>
+                        </div>
+                    </div>
+                    <div class="row-4">
+                        <div class="course">
+                            <select id="courses" name="courses">
+                                <option value="c-1">M.Tech</option>
+                                <option value="c-2">M.Sc</option>
+                                <option value="c-3">MCA</option>
+                                <option value="c-4">B.Tech</option>
+                                <option value="c-5">B.Sc</option>
+                                <option value="c-6">BCA</option>
+                                <option value="c-7">Diploma</option>
+                                <option value="c-8">Plus Two</option>
+                                </select>
+                        </div>
+                        <div class="percentage">
+                            <input type="text" id="mark" name="mark">
+                        </div>
+                        <div class="gpa">
+                            <input type="range" id="vol" name="vol" min="0" max="10">
+                        </div>
+                        <div class="upload">
+                            <input type="file" id="myFile" name="file">
+                        </div>
+                    </div>
+                </div>
+               
+                <!-- <div>
+                    <input type="text" id="mark" name="mark">
+                </div>
+                <div>
+                    <input type="range" id="vol" name="vol" min="0" max="10">
+                </div>
+                <div>
+                    <input type="file" id="myFile" name="file">
+                </div> -->
+                <!-- <div class="course">
+                    <label for="courses" class="space">Choose a courses:</label>
+                    <select id="courses" name="courses">
+                    <option value="c-1">M.Tech</option>
+                    <option value="c-2">M.Sc</option>
+                    <option value="c-3">MCA</option>
+                    <option value="c-4">B.Tech</option>
+                    <option value="c-5">B.Sc</option>
+                    <option value="c-6">BCA</option>
+                    <option value="c-7">Diploma</option>
+                    <option value="c-8">Plus Two</option>
+                    </select>
+                </div><br>
+                <div class="mark" class="space">
+                    <span>
+                        Percentage of marks
+                    </span>
+                    <span>
+                        <input type="text" id="mark" name="mark">
+                    </span>
+                </div><br>
+                <div class="range" class="space">
+                    <label for="point">Rate your programming level(out of 10):</label>
+                    <input type="range" id="vol" name="vol" min="0" max="10">
+                </div>   <br>  -->
+            </div>
+             <div class="login" >
+                <h3>
+                    Login credentials
+                </h3>
+                <div class="row-3">
+                    <div class="col-1">
+                        <div class="user">
+                            <label for="username">Username</label>
+                        </div>
+                        <div class="pass-1">
+                            <label for="username" >Password</label>
+                        </div>
+                        <div class="pass-2">
+                            <label for="username" >Confirm password</label>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div>
+                            <input type="email" id="uname" name="uname" placeholder="example@email.com">
+                        </div>
+                        <div>
+                            <input type="password" id="password-1" name="password-1">
+                        </div>
+                        <div>
+                            <input type="password" id="password-2" name="password-2">
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+               <!--<div class="user">
+                    <span>
+                        <label for="username" class="space">Username</label>
+                      </span>
+                      <span>
+                        <input type="email" id="uname" name="uname" placeholder="example@email.com" class="space">
+                      </span>
+                </div><br>
+                <div class="pass-1">
+                    <span>
+                        <label for="username" class="space">Password</label>
+                      </span>
+                      <span>
+                        <input type="password" id="password-1" name="password-1" class="space">
+                      </span>
+                </div><br>
+                <div class="pass-2">
+                     <span>
+                        <label for="username" class="space">Re-type Password</label>
+                      </span>
+                      <span>
+                        <input type="password" id="password-2" name="password-2">
+                      </span>
+                </div> <br>     
+            </div>  -->
+            <button type="submit" id="submit" class="button" value="Submit">Submit</button>
+        </form>
+    </div> 
+    
+</body>
+</html>
