@@ -11,20 +11,21 @@
     <title>Javascript</title>
 </head>
 <body>
-   
     <div class="border">
         <div class="heading">
-           <h1>REGISTRATION FORM</h1> 
+           <h2>
+               REGISTRATION FORM
+            </h2> 
         </div>
-        <form action="#" name="myForm" onsubmit="return validateForm()" id="submit">
+        <form action="#" onsubmit="validateForm()" id="myForm">
             <div class="personal">
-                <h2>
+                <h3>
                     Personal Details
-                </h2>
+                </h3>
                 <div class="general">
                     <div class="rows-1">
                         <div class="name">
-                            <label for="fname"class="space">Name:</label>
+                            <label for="fname">Name:</label>
                         </div>
                         <div class="gender">
                             <label for="gender" >Gender</label>
@@ -51,6 +52,7 @@
                     <div class=rows>
                         <div class="name-1">
                             <input type="text" id="fname" name="fname">
+                            <span class="errors"></span>
                         </div>
                         <div class="gender">
                             <span>
@@ -60,27 +62,32 @@
                                 <label for="female">Female</label>
                                 <input type="radio" id="others" name="others" value="Others" class="common">
                                 <label for="others">Others</label>
-                            </span>               
+                            </span>    
+                            <span class="errors"></span>           
                         </div>
                         <div class="address-1">
-                            <textarea name="address-1"rows="4" cols="22"></textarea>
+                            <textarea name="address-1"rows="4" cols="25"></textarea>
+                            <span class="errors"></span>
                         </div>
                         <div class="email-1">
                             <input type="email" id="email" name="email">
+                            <span class="errors"></span>
                         </div>
                         <div class="mobile-1">
                             <input type="text" id="mob" name="mob">
+                            <span class="errors"></span>
                         </div>
                         <div class="hobby-1">
                             <span>
-                                <input type="checkbox" id="read" name="read">
+                                <input type="checkbox" id="read" name="read"class="common-1">
                                 <label for="read"> Reading</label>
-                                <input type="checkbox" id="drive" name="drive">
+                                <input type="checkbox" id="drive" name="drive"class="common-1">
                                 <label for="drive">Driving</label>
-                                <input type="checkbox" id="garden" name="garden">
+                                <input type="checkbox" id="garden" name="garden"class="common-1">
                                 <label for="garden"> Gardening</label>
 
                             </span>
+                            <span class="errors"></span>
                         </div>
                         <div class="bday-1">
                             <input type="date" id="birthday" name="birthday">
@@ -91,97 +98,6 @@
                     </div>
                 </div>
             </div>
-               
-
-
-
-
-                <!-- <div>
-                    <span class="name">
-                      <label for="fname"class="space">Name:</label>
-                    </span>
-                    <span>
-                      <input type="text" id="fname" name="fname" class="first">
-                    </span>
-                 </div><br>
-                 <div>
-                    <span class="gender">
-                        <label for="gender" class="space">Gender</label>
-                    </span>
-                      <span>
-                        <input type="radio" id="male" name="male" value="Male" class="common">
-                        <label for="html">Male</label>
-                      </span>
-                      <span>
-                        <input type="radio" id="female" name="female" value="Female" class="common">
-                        <label for="female">Female</label>
-                      </span>
-                      <span>
-                        <input type="radio" id="others" name="others" value="Others" class="common">
-                        <label for="others">Others</label>
-                      </span>
-                   </div><br>
-                    <div>
-                        <span class="address">
-                            <label for="address" class="space">Address</label>
-                        </span>
-                        <span>
-                            <textarea name="address"></textarea>
-                            <input type="textarea" id="address" name="address"> 
-                        </span>
-                    </div><br>
-                    <div>
-                        <span class="email">
-                            <label for="email" class="space">Email</label>
-                        </span>
-                        <span>
-                            <input type="email" id="email" name="email">
-                        </span>
-                    </div><br>
-                   
-                    <div>
-                        <span class="mobile">
-                            <label for="mob" class="space">Mobile Number</label>
-                        </span>
-                        <span>
-                            <input type="text" id="mob" name="mob">
-                        </span>
-                    </div><br>
-                    
-                    <div class="hobby">
-                        <span class="hobby1">
-                            <label for="hobbies" class="space"> Choose hobbies</label>
-                        </span>
-                        <span>
-                            <input type="checkbox" id="read" name="read">
-                        </span>
-                        <span class="reading">
-                            <label for="read"> Reading</label>
-                        </span>
-                        <span>
-                            <input type="checkbox" id="drive" name="drive">
-                        </span>
-                        <span class="driving">
-                            <label for="drive">Driving</label>
-                        </span>
-                        <span>
-                            <input type="checkbox" id="garden" name="garden">
-                        </span>
-                        <span class="gardening">
-                            <label for="gardening">Gardening</label>
-                        </span>
-                    </div><br>
-                    <div class="bday">
-                        <label for="birthday" class="space">Date of Birth</label>
-                        <input type="date" id="birthday" name="birthday">
-                    </div><br>
-                    <div class="color">
-                        <label for="favcolor" class="gap">Select your favorite color:</label>
-                        <input type="color" id="favcolor" name="favcolor"><br><br>
-                    </div><br>
-            </div> -->
-
-
             <div class="education">
                 <h3>Educational details</h3>
                 <div class="details">
@@ -193,7 +109,7 @@
                             Percentage of marks
                         </div>
                         <div class="column-3">
-                            <label for="point">Rate your programming level(out of 10):</label>
+                            <label for="point">Rate your programming level:</label>
                         </div>
                         <div class="column-4">
                             <label for="filename">Upload CV</label>
@@ -210,54 +126,21 @@
                                 <option value="c-6">BCA</option>
                                 <option value="c-7">Diploma</option>
                                 <option value="c-8">Plus Two</option>
-                                </select>
+                            </select>
                         </div>
                         <div class="percentage">
                             <input type="text" id="mark" name="mark">
+                            <span class="errors"></span>
                         </div>
                         <div class="gpa">
                             <input type="range" id="vol" name="vol" min="0" max="10">
                         </div>
                         <div class="upload">
                             <input type="file" id="myFile" name="file">
+                            <span class="errors"></span>
                         </div>
                     </div>
                 </div>
-               
-                <!-- <div>
-                    <input type="text" id="mark" name="mark">
-                </div>
-                <div>
-                    <input type="range" id="vol" name="vol" min="0" max="10">
-                </div>
-                <div>
-                    <input type="file" id="myFile" name="file">
-                </div> -->
-                <!-- <div class="course">
-                    <label for="courses" class="space">Choose a courses:</label>
-                    <select id="courses" name="courses">
-                    <option value="c-1">M.Tech</option>
-                    <option value="c-2">M.Sc</option>
-                    <option value="c-3">MCA</option>
-                    <option value="c-4">B.Tech</option>
-                    <option value="c-5">B.Sc</option>
-                    <option value="c-6">BCA</option>
-                    <option value="c-7">Diploma</option>
-                    <option value="c-8">Plus Two</option>
-                    </select>
-                </div><br>
-                <div class="mark" class="space">
-                    <span>
-                        Percentage of marks
-                    </span>
-                    <span>
-                        <input type="text" id="mark" name="mark">
-                    </span>
-                </div><br>
-                <div class="range" class="space">
-                    <label for="point">Rate your programming level(out of 10):</label>
-                    <input type="range" id="vol" name="vol" min="0" max="10">
-                </div>   <br>  -->
             </div>
              <div class="login" >
                 <h3>
@@ -278,45 +161,21 @@
                     <div class="col-2">
                         <div>
                             <input type="email" id="uname" name="uname" placeholder="example@email.com">
+                            <span class="errors"></span>
                         </div>
                         <div>
                             <input type="password" id="password-1" name="password-1">
+                            <span class="errors"></span>
                         </div>
                         <div>
                             <input type="password" id="password-2" name="password-2">
+                            <span class="errors"></span>
                         </div>
                     </div>
                 </div>
-               
             </div>
-               <!--<div class="user">
-                    <span>
-                        <label for="username" class="space">Username</label>
-                      </span>
-                      <span>
-                        <input type="email" id="uname" name="uname" placeholder="example@email.com" class="space">
-                      </span>
-                </div><br>
-                <div class="pass-1">
-                    <span>
-                        <label for="username" class="space">Password</label>
-                      </span>
-                      <span>
-                        <input type="password" id="password-1" name="password-1" class="space">
-                      </span>
-                </div><br>
-                <div class="pass-2">
-                     <span>
-                        <label for="username" class="space">Re-type Password</label>
-                      </span>
-                      <span>
-                        <input type="password" id="password-2" name="password-2">
-                      </span>
-                </div> <br>     
-            </div>  -->
             <button type="submit" id="submit" class="button" value="Submit">Submit</button>
         </form>
-    </div> 
-    
+    </div>  
 </body>
 </html>

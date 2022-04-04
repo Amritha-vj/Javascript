@@ -1,3 +1,8 @@
+form.addEventListener("myForm",(e)=>
+{
+    e.preventDefault();
+    validate();
+});
 function validateForm() {
     let name = document.forms["myForm"]["fname"].value;
     let gender = document.getElementsByClassName("common");
@@ -17,76 +22,73 @@ function validateForm() {
     let phoneno = /[0-9]{10}/;
     let gpa=/[1-100]/;
     let special=/[!@#$%^&*]/;
+    let error=document.getElementsByClassName("errors");
     let password=  /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$/;
     var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     // let pass2=document.forms["myForm"]["password-2"].value;
     // let pass2=document.forms["myForm"]["password-2"].value;
     // let pass2=document.forms["myForm"]["password-2"].value;
     if (name == "") {
-      console.log(sdsd);
-      alert("Name must be filled out");
-      return false;
+      error[0].innerHTML="Enter a valid name";
     }
-    if (name == 0||name<0 ||name>0||name.match(special)) {
-        alert("Numbers not allowed");
-        return false;
+    if (name<0 ||name>0||name.match(special)) {
+      error[0].innerHTML="Numbers not allowed"; 
       }
 
     if (gender[0].checked == false && gender[1].checked == false  && gender[2].checked == false) {
-        alert("Gender must be filled out");
-        return false;
+      error[1].innerHTML="Enter a gender";
       }
       if (address == "") {
-        alert("Address must be filled out");
-        return false;
+        error[2].innerHTML="Enter an address";
+       
       }
       if (email == ""|| !email.match(validRegex)) {
-        alert("Email must be filled out");
-        return false;
+        error[3].innerHTML="Enter a valid email";
+       
       }
       if (mobile == ""|| !mobile.match(phoneno)) {
         
-        alert("Mobile number must be filled out");
-        return false;
+        error[4].innerHTML="Enter a valid mobile number";
+        
       }
       if (read == false && drive == false  && garden == false) {
-        alert("hobby must be filled out");
-        return false;
+        error[5].innerHTML="Enter a hobby";
+       
       }
      
       if (mark == ""||mark<=1||mark>=100) {
-        alert("Enter a valid cgpa");
-        return false;
+        error[6].innerHTML="Enter a valid percentage";
+        
       }
       if (color == "") {
-        alert("Color must be filled out");
-        return false;
+        error[7].innerHTML="Enter a color";
+       
       }
       if (files == "") {
-        alert("File must be uploaded");
-        return false;
+        error[8].innerHTML="Upload a file";
+        
       }
       
       if (user == "") {
-        alert("Username must be filled out");
-        return false;
+        error[9].innerHTML="Enter a valid username";
+        
       }
       if (pass1 == ""||!pass1.match(password)) {
-        alert("password must be filled out");
-        return false;
+        error[10].innerHTML="Enter a valid password";
+        
       }
       if (pass2 == ""){
-        alert("retype passwod must be filled out");
-        return false;
+        error[11].innerHTML="Enter a valid password";
+        
       }
       if((pass1!=pass2))
       {
-          alert("Confirm your password correctly");
-          return false;
+        error[12].innerHTML="Confirm your password";
+         
       }
       if (bday == "") {
-        alert("DOB must be filled out");
-        return false;
+        error[13].innerHTML="Enter a DOB";
+       
       }
     } 
 
