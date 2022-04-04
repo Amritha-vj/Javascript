@@ -16,7 +16,7 @@
         <div class="heading">
            <h1>REGISTRATION FORM</h1> 
         </div>
-        <form action="#" name="myForm" onsubmit="validateForm()" id="submit">
+        <form action="#" name="myForm" onsubmit="return validateForm()" id="submit">
             <div class="personal">
                 <h2>
                     Personal Details
@@ -49,8 +49,8 @@
                         </div>
                     </div>
                     <div class=rows>
-                        <div class="name">
-                            <input type="text" id="fname" name="fname" class="first">
+                        <div class="name-1">
+                            <input type="text" id="fname" name="fname">
                         </div>
                         <div class="gender">
                             <span>
@@ -62,16 +62,16 @@
                                 <label for="others">Others</label>
                             </span>               
                         </div>
-                        <div class="address">
+                        <div class="address-1">
                             <textarea name="address-1"rows="4" cols="22"></textarea>
                         </div>
-                        <div class="email">
+                        <div class="email-1">
                             <input type="email" id="email" name="email">
                         </div>
-                        <div class="mobile">
+                        <div class="mobile-1">
                             <input type="text" id="mob" name="mob">
                         </div>
-                        <div class="hobby">
+                        <div class="hobby-1">
                             <span>
                                 <input type="checkbox" id="read" name="read">
                                 <label for="read"> Reading</label>
@@ -82,10 +82,10 @@
 
                             </span>
                         </div>
-                        <div class="bday">
+                        <div class="bday-1">
                             <input type="date" id="birthday" name="birthday">
                         </div>
-                        <div class="color">
+                        <div class="color-1">
                             <input type="color" id="favcolor" name="favcolor">
                         </div>
                     </div>

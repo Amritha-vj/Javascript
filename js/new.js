@@ -1,7 +1,7 @@
 function validateForm() {
     let name = document.forms["myForm"]["fname"].value;
     let gender = document.getElementsByClassName("common");
-    let address=document.forms["myForm"]["address"].value;
+    let address=document.forms["myForm"]["address-1"].value;
     let email=document.forms["myForm"]["email"].value;
     let mobile=document.forms["myForm"]["mob"].value;
     let read = document.getElementById("read").checked;
@@ -23,6 +23,7 @@ function validateForm() {
     // let pass2=document.forms["myForm"]["password-2"].value;
     // let pass2=document.forms["myForm"]["password-2"].value;
     if (name == "") {
+      console.log(sdsd);
       alert("Name must be filled out");
       return false;
     }

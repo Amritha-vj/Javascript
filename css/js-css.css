@@ -166,20 +166,25 @@ button{
     padding: 10px;
     margin-bottom: 5px; */
 
-.name {
+    .name {
         margin-right: 30px;
         margin-bottom: 20px;
         margin-top: 10px;
     }
-    .address-1{
-        margin-bottom: 5px;
+    .address-1 {
+        margin-bottom: 19px;
     }
     .address {
         margin-right: 30px;
         margin-bottom: 77px;
     }
-.name{
+    /* .name{
+         margin-right: 30px;
+    } */
+    .name-1 {
     margin-right: 30px;
+    margin-bottom: 14px;
+    /* border: 1px solid red; */
 }
 .gender {
     margin-right: 30px;
@@ -187,11 +192,23 @@ button{
 }
 .email {
     margin-right: 30px;
+    margin-bottom: 35px;
+}
+.email-1 {
+    margin-right: 30px;
     margin-bottom: 22px;
 }
 .mobile {
     margin-right: 30px;
+    margin-bottom: 30px;
+}
+.mobile-1 {
+    margin-right: 30px;
     margin-bottom: 22px;
+}
+.hobby-1 {
+    margin-right: 30px;
+    margin-bottom: 28px;
 }
 .color {
     margin-right: 30px;
@@ -204,6 +221,12 @@ button{
 .hobby {
     margin-right: 30px;
     margin-bottom: 22px;
+}
+.bday {
+    margin-bottom: 30px;
+}
+.bday-1 {
+    margin-bottom: 5px;
 }
 .reading{
     margin-right: 30px;
