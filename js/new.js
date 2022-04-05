@@ -14,7 +14,6 @@ function validateForm() {
   let drive = document.getElementById("drive").checked;
   let garden = document.getElementById("garden").checked;
   let range=document.forms["myForm"]["vol"].value;
-  // let color = document.forms["myForm"]["favcolor"].value;
   let mark = document.forms["myForm"]["mark"].value;
   let user = document.forms["myForm"]["uname"].value;
   let pass1 = document.forms["myForm"]["password-1"].value;
@@ -84,12 +83,6 @@ function validateForm() {
   else {
     error[6].innerHTML = " ";
   }
-  // if (color == " ") {
-  //   error[7].innerHTML = "Enter a color";
-  // }
-  // else {
-  //   error[7].innerHTML = " ";
-  // }
   if (mark == "" || mark <= 1 || mark >= 100) {
     error[7].innerHTML = "Enter a valid percentage";
 
