@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/js-css.css">
 	<script src="js/icon.js"></script>
-    <script src="js/new.js"></script> 
+    <!-- <script src="js/new.js"></script>  -->
 	<!-- <link rel="icon" type="image/x-icon" href="gicon.jpg"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript</title>
@@ -17,7 +17,7 @@
                REGISTRATION FORM
             </h2> 
         </div>
-        <form action="#" onsubmit="validateForm()" id="myForm">
+        <form action="#" onclick="validateForm()" id="myForm">
             <div class="personal">
                 <h3>
                     Personal Details
@@ -91,9 +91,11 @@
                         </div>
                         <div class="bday-1">
                             <input type="date" id="birthday" name="birthday">
+                            <span class="errors"></span>
                         </div>
                         <div class="color-1">
                             <input type="color" id="favcolor" name="favcolor">
+                            <span class="errors"></span>
                         </div>
                     </div>
                 </div>
@@ -176,6 +178,7 @@
             </div>
             <button type="submit" id="submit" class="button" value="Submit">Submit</button>
         </form>
-    </div>  
+    </div> 
+     <script src="js/new.js"></script> 
 </body>
 </html>

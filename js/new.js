@@ -1,98 +1,110 @@
-form.addEventListener("myForm",(e)=>
-{
-    e.preventDefault();
-    validate();
+let form=document.getElementById("myForm");
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  validateForm();
 });
+
 function validateForm() {
-    let name = document.forms["myForm"]["fname"].value;
-    let gender = document.getElementsByClassName("common");
-    let address=document.forms["myForm"]["address-1"].value;
-    let email=document.forms["myForm"]["email"].value;
-    let mobile=document.forms["myForm"]["mob"].value;
-    let read = document.getElementById("read").checked;
-    let drive = document.getElementById("drive").checked;
-    let garden = document.getElementById("garden").checked;
-    let color = document.forms["myForm"]["favcolor"].value;
-    let mark=document.forms["myForm"]["mark"].value;
-    let user=document.forms["myForm"]["uname"].value;
-    let pass1=document.forms["myForm"]["password-1"].value;
-    let pass2=document.forms["myForm"]["password-2"].value;
-    let bday=document.forms["myForm"]["birthday"].value;
-    let files=document.forms["myForm"]["file"].value;
-    let phoneno = /[0-9]{10}/;
-    let gpa=/[1-100]/;
-    let special=/[!@#$%^&*]/;
-    let error=document.getElementsByClassName("errors");
-    let password=  /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$/;
-    var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    // let pass2=document.forms["myForm"]["password-2"].value;
-    // let pass2=document.forms["myForm"]["password-2"].value;
-    // let pass2=document.forms["myForm"]["password-2"].value;
-    if (name == "") {
-      error[0].innerHTML="Enter a valid name";
-    }
-    if (name<0 ||name>0||name.match(special)) {
-      error[0].innerHTML="Numbers not allowed"; 
-      }
+  let name = document.forms["myForm"]["fname"].value;
+  let gender = document.getElementsByClassName("common");
+  let address = document.forms["myForm"]["address-1"].value;
+  let email = document.forms["myForm"]["email"].value;
+  let mobile = document.forms["myForm"]["mob"].value;
+  let read = document.getElementById("read").checked;
+  let drive = document.getElementById("drive").checked;
+  let garden = document.getElementById("garden").checked;
+  let color = document.forms["myForm"]["favcolor"].value;
+  let mark = document.forms["myForm"]["mark"].value;
+  let user = document.forms["myForm"]["uname"].value;
+  let pass1 = document.forms["myForm"]["password-1"].value;
+  let pass2 = document.forms["myForm"]["password-2"].value;
+  let bday = document.forms["myForm"]["birthday"].value;
+  let files = document.forms["myForm"]["file"].value;
+  let phoneno = /[0-9]{10}/;
+  let special = /[!@#$%^&*]/;
+  let error = document.getElementsByClassName("errors");
+  let password = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$/;
+  var validemail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  if (name == "") {
+    error[0].innerHTML = "Enter a valid name";
+  } else if (name < 0 || name > 0 || name.match(special)) {
+    error[0].innerHTML = "Numbers not allowed";
+  } else {
+    error[0].innerHTML = " ";
+  }
 
-    if (gender[0].checked == false && gender[1].checked == false  && gender[2].checked == false) {
-      error[1].innerHTML="Enter a gender";
-      }
-      if (address == "") {
-        error[2].innerHTML="Enter an address";
-       
-      }
-      if (email == ""|| !email.match(validRegex)) {
-        error[3].innerHTML="Enter a valid email";
-       
-      }
-      if (mobile == ""|| !mobile.match(phoneno)) {
-        
-        error[4].innerHTML="Enter a valid mobile number";
-        
-      }
-      if (read == false && drive == false  && garden == false) {
-        error[5].innerHTML="Enter a hobby";
-       
-      }
-     
-      if (mark == ""||mark<=1||mark>=100) {
-        error[6].innerHTML="Enter a valid percentage";
-        
-      }
-      if (color == "") {
-        error[7].innerHTML="Enter a color";
-       
-      }
-      if (files == "") {
-        error[8].innerHTML="Upload a file";
-        
-      }
-      
-      if (user == "") {
-        error[9].innerHTML="Enter a valid username";
-        
-      }
-      if (pass1 == ""||!pass1.match(password)) {
-        error[10].innerHTML="Enter a valid password";
-        
-      }
-      if (pass2 == ""){
-        error[11].innerHTML="Enter a valid password";
-        
-      }
-      if((pass1!=pass2))
-      {
-        error[12].innerHTML="Confirm your password";
-         
-      }
-      if (bday == "") {
-        error[13].innerHTML="Enter a DOB";
-       
-      }
-    } 
+  if (gender[0].checked == false && gender[1].checked == false && gender[2].checked == false) {
+    error[1].innerHTML = "Enter a gender";
+  } else {
+    error[1].innerHTML = " ";
+  }
+  if (address == "") {
+    error[2].innerHTML = "Enter an address";
+  } else {
+    error[2].innerHTML = " ";
+  }
+  if (email == "" || !email.match(validemail)) {
+    error[3].innerHTML = "Enter a valid email";
 
+  } else {
+    error[3].innerHTML = " ";
+  }
+  if (mobile == "" || !mobile.match(phoneno)) {
 
+    error[4].innerHTML = "Enter a valid mobile number";
 
-    
-    
+  } else {
+    error[4].innerHTML = " ";
+  }
+  if (read == false && drive == false && garden == false) {
+    error[5].innerHTML = "Enter a hobby";
+
+  } else {
+    error[5].innerHTML = " ";
+  }
+  if (bday == "") {
+    error[6].innerHTML = "Enter a DOB";
+
+  } else {
+    error[6].innerHTML = " ";
+  }
+  if (color == "") {
+    error[7].innerHTML = "Enter a color";
+
+  } else {
+    error[7].innerHTML = " ";
+  }
+  if (mark == "" || mark <= 1 || mark >= 100) {
+    error[8].innerHTML = "Enter a valid percentage";
+
+  } else {
+    error[8].innerHTML = " ";
+  }
+  if (files == "") {
+    error[9].innerHTML = "Upload a file";
+
+  } else {
+    error[9].innerHTML = " ";
+  }
+
+  if (user == "") {
+    error[10].innerHTML = "Enter a valid username";
+
+  } else {
+    error[10].innerHTML = " ";
+  }
+  if (pass1 == "" || !pass1.match(password)) {
+    error[11].innerHTML = "Enter a valid password";
+
+  } else {
+    error[11].innerHTML = " ";
+  }
+  
+  if (pass2 != pass1) {
+    error[12].innerHTML = "Confirm your password";
+
+  } else {
+    error[12].innerHTML = " ";
+  }
+  
+}
