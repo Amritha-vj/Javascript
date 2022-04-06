@@ -48,11 +48,11 @@
                     </div>
                     <div class=rows>
                         <div class="name-1">
-                            <input type="text" id="fname" name="fname">
-                            <span class="errors"></span>
+                            <input type="text" id="fname" name="fname"placeholder="Enter the name">
+                            <div class="errors"></div>
                         </div>
                         <div class="gender">
-                            <span>
+                            <span id="radio">
                                 <input type="radio" id="male" name="male" value="Male" class="common">
                                   <label for="html">Male</label>
                                 <input type="radio" id="female" name="female" value="Female" class="common">
@@ -60,22 +60,22 @@
                                 <input type="radio" id="others" name="others" value="Others" class="common">
                                   <label for="others">Others</label>
                             </span>
-                            <span class="errors"></span>
+                            <div class="errors"></div>
                         </div>
                         <div class="address-1">
-                            <textarea name="address-1" rows="4" cols="25"></textarea>
-                            <span class="errors"></span>
+                            <textarea name="address-1" rows="4" cols="25" id="address-1"placeholder="Enter the Address"></textarea>
+                            <div class="errors"></div>
                         </div>
                         <div class="email-1">
-                            <input type="email" id="email" name="email">
-                            <span class="errors"></span>
+                            <input type="email" id="email" name="email"placeholder="Enter the Email">
+                            <div class="errors"></div>&nbsp;<i class="fa-solid fa-circle-exclamation"class="xyz"></i>
                         </div>
                         <div class="mobile-1">
-                            <input type="text" id="mob" name="mob">
-                            <span class="errors"></span>
+                            <input type="text" id="mob" name="mob" placeholder="Enter the Mobile number">
+                            <div class="errors"></div>
                         </div>
                         <div class="hobby-1">
-                            <span>
+                            <span id="check">
                                 <input type="checkbox" id="read" name="read" class="common-1">
                                 <label for="read"> Reading</label>
                                 <input type="checkbox" id="drive" name="drive" class="common-1">
@@ -83,11 +83,11 @@
                                 <input type="checkbox" id="garden" name="garden" class="common-1">
                                 <label for="garden"> Gardening</label>
                             </span>
-                            <span class="errors"></span>
+                            <div class="errors"></div>
                         </div>
                         <div class="bday-1">
                             <input type="date" id="birthday" name="birthday">
-                            <span class="errors"></span>
+                            <div class="errors"></div>
                         </div>
                     </div>
                 </div>
@@ -123,16 +123,16 @@
                             </select>
                         </div>
                         <div class="percentage">
-                            <input type="text" id="mark" name="mark">
-                            <span class="errors"></span>
+                            <input type="text" id="mark" name="mark"placeholder="Enter the percentage">
+                            <div class="errors"></div>
                         </div>
                         <div class="gpa">
                             <input type="range" id="vol" name="vol" min="0" max="10">
-                            <span class="errors"></span>
+                            <div class="errors"></div>
                         </div>
                         <div class="upload">
                             <input type="file" id="myFile" name="file">
-                            <span class="errors"></span>
+                            <div class="errors"></div>
                         </div>
                     </div>
                 </div>
@@ -156,17 +156,17 @@
                     <div class="col-2">
                         <div>
                             <input type="email" id="uname" name="uname" placeholder="example@email.com">
-                            <span class="errors"></span>
+                            <div class="errors"></div>
+                        <div>
+                            <input type="password" id="password-1" name="password-1"placeholder="Enter the Password">
+                            <div class="errors"></div>
                         </div>
                         <div>
-                            <input type="password" id="password-1" name="password-1">
-                            <span class="errors"></span>
-                        </div>
-                        <div>
-                            <input type="password" id="password-2" name="password-2">
-                            <span class="errors"></span>
+                            <input type="password" id="password-2" name="password-2"placeholder="Confirm password">
+                            <div class="errors"></div>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
             <button type="submit" id="submit" class="button" value="Submit">Submit</button>
@@ -174,5 +174,4 @@
     </div>
     <script src="js/new.js"></script>
 </body>
-
 </html>
