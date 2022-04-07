@@ -165,9 +165,7 @@ function validateForm() {
         {
 
             const fsize = files.files.item(i).size;
-            alert(fsize);
             const file = Math.round((fsize / 1024));
-            alert(file);
             if (file >= 2048) 
             {
                 files.nextElementSibling.innerHTML = "Select a file less than 2mb";
@@ -190,54 +188,52 @@ function validateForm() {
     {
         files.nextElementSibling.innerHTML=" ";
     }
- 
-
-  if (user.value.trim() == " ") 
-  {
-      user.nextElementSibling.innerHTML = "Username required";
-      user.className="error-border";
-      user.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
-  }
-  else if(user.value!=user.value.match(validemail))
-  {
-      user.className="error-border";
-      user.nextElementSibling.innerHTML="Enter a valid username";
-      user.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
-  }
-  else 
-  {
-      user.className="green-border";
-      user.nextElementSibling.innerHTML = " ";
-      user.parentElement.querySelector('.fa-circle-exclamation').classList.remove('visible');
-  }
-  if (pass1.value.trim() == "") 
-  {
-      pass1.className="error-border";
-      pass1.nextElementSibling.innerHTML = "Password required";
-      pass1.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
+    if (user.value.trim() == " ") 
+    {
+        user.nextElementSibling.innerHTML = "Username required";
+        user.className="error-border";
+        user.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
     }
-  else if(pass1.value!=pass1.value.match(password))
-  {
-      pass1.className="error-border";
-      pass1.nextElementSibling.innerHTML="Enter a valid password";
-      pass1.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
-  }
-  else 
-  {
-      pass1.className="green-border";
-      pass1.nextElementSibling.innerHTML = " ";
-      pass1.parentElement.querySelector('.fa-circle-exclamation').classList.remove('visible');
-  }
-  if (pass2 != pass1) 
-  {
-      pass2.className="error-border";
-      pass2.nextElementSibling.innerHTML="Confirm your password";
-      pass2.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
-  }
-  else 
-  {
-      pass2.className="green-border";
-      pass2.nextElementSibling.innerHTML="";
-      pass2.parentElement.querySelector('.fa-circle-exclamation').classList.remove('visible');
-  }
-}
+    else if(user.value!=user.value.match(validemail))
+    {
+        user.className="error-border";
+        user.nextElementSibling.innerHTML="Enter a valid username";
+        user.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
+    }
+    else 
+    {
+        user.className="green-border";
+        user.nextElementSibling.innerHTML = " ";
+        user.parentElement.querySelector('.fa-circle-exclamation').classList.remove('visible');
+    }
+    if (pass1.value.trim() == "") 
+    {
+        pass1.className="error-border";
+        pass1.nextElementSibling.innerHTML = "Password required";
+        pass1.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
+        }
+    else if(pass1.value!=pass1.value.match(password))
+    {
+        pass1.className="error-border";
+        pass1.nextElementSibling.innerHTML="Enter a valid password";
+        pass1.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
+    }
+    else 
+    {
+        pass1.className="green-border";
+        pass1.nextElementSibling.innerHTML = " ";
+        pass1.parentElement.querySelector('.fa-circle-exclamation').classList.remove('visible');
+    }
+    if (pass2 != pass1) 
+    {
+        pass2.className="error-border";
+        pass2.nextElementSibling.innerHTML="Confirm your password";
+        pass2.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
+    }
+    else 
+    {
+        pass2.className="green-border";
+        pass2.nextElementSibling.innerHTML="";
+        pass2.parentElement.querySelector('.fa-circle-exclamation').classList.remove('visible');
+    }
+    }
