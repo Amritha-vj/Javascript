@@ -62,6 +62,12 @@ function validateForm() {
       address.nextElementSibling.innerHTML = "Address required";
       address.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
   }
+  else if(address.value.length<=10)
+  {
+    address.className="error-border";
+    address.nextElementSibling.innerHTML = "Enter a valid address";
+    address.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
+  }
   else 
   {
       address.className="green-border";
@@ -152,11 +158,39 @@ function validateForm() {
   {
       files.nextElementSibling.innerHTML = "File required";
       files.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
-  } 
-  else 
-  {
-      files.nextElementSibling.innerHTML = " ";
   }
+  else if (files.files.length > 0) 
+  {
+        for (const i = 0; i <= files.files.length - 1; i++) 
+        {
+
+            const fsize = files.files.item(i).size;
+            alert(fsize);
+            const file = Math.round((fsize / 1024));
+            alert(file);
+            if (file >= 2048) 
+            {
+                files.nextElementSibling.innerHTML = "Select a file less than 2mb";
+                files.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
+            } 
+            else if (file < 1024) 
+            {
+                files.className="green-border";
+                files.nextElementSibling.innerHTML = "Uploaded";
+                files.parentElement.querySelector('.fa-circle-exclamation').classList.remove('visible');
+            }
+            else 
+            {
+                files.nextElementSibling.innerHTML = "Select a file greater  than 500KB";
+                files.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
+            }
+        }
+    } 
+    else 
+    {
+        files.nextElementSibling.innerHTML=" ";
+    }
+ 
 
   if (user.value.trim() == " ") 
   {
