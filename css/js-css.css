@@ -316,7 +316,10 @@ button {
 .bday {
     margin-bottom: 30px;
 }
-
+.fa-asterisk{
+    color:red;
+    font-size: 8px;
+}
 .reading {
     margin-right: 30px;
 
