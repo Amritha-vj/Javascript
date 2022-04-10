@@ -100,6 +100,46 @@
                     </div>
                 </div>
             </div>
+
+            <div class="login">
+                <h3>
+                    Login credentials
+                </h3>
+                <div class="row-3">
+                    <div class="col-1">
+                        <div class="user">
+                            <label>Username &nbsp;<sup><i class="fa-solid fa-asterisk"></i></sup></label>
+                        </div>
+                        <div class="pass-1">
+                            <label>Password &nbsp;<sup><i class="fa-solid fa-asterisk"></i></sup></label>
+                        </div>
+                        <div class="pass-2">
+                            <label>Confirm password &nbsp;<sup><i class="fa-solid fa-asterisk"></i></sup></label>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div>
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <input type="email" id="uname" name="uname" placeholder="example@email.com" onblur="validateForm()">
+                            <span class="errors">
+                            </span>
+                            <div>
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <input type="password" id="password-1" name="password-1" placeholder="Enter the Password" onblur="validateForm()">
+                                <span class="errors">
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <input type="password" id="password-2" name="password-2" placeholder="Confirm password" onblur="validateForm()">
+                            <span class="errors">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="education">
                 <h3>Educational details</h3>
                 <div class="details">
@@ -150,44 +190,9 @@
                     </div>
                 </div>
             </div>
-            <div class="login">
-                <h3>
-                    Login credentials
-                </h3>
-                <div class="row-3">
-                    <div class="col-1">
-                        <div class="user">
-                            <label>Username &nbsp;<sup><i class="fa-solid fa-asterisk"></i></sup></label>
-                        </div>
-                        <div class="pass-1">
-                            <label>Password &nbsp;<sup><i class="fa-solid fa-asterisk"></i></sup></label>
-                        </div>
-                        <div class="pass-2">
-                            <label>Confirm password &nbsp;<sup><i class="fa-solid fa-asterisk"></i></sup></label>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div>
-                            <i class="fa-solid fa-circle-exclamation"></i>
-                            <input type="email" id="uname" name="uname" placeholder="example@email.com" onblur="validateForm()">
-                            <span class="errors">
-                            </span>
-                            <div>
-                                <i class="fa-solid fa-circle-exclamation"></i>
-                                <input type="password" id="password-1" name="password-1" placeholder="Enter the Password" onblur="validateForm()">
-                                <span class="errors">
-                                </span>
-                            </div>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-circle-exclamation"></i>
-                            <input type="password" id="password-2" name="password-2" placeholder="Confirm password" onblur="validateForm()">
-                            <span class="errors">
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+
+            
             <button type="submit" id="submit" class="button" value="Submit">Submit</button>
         </form>
     </div>

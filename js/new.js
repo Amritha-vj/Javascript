@@ -3,7 +3,6 @@ form.addEventListener("submit", (e) => {
     e.preventDefault();
     validateForm();
 });
-
 function validateForm() {
     let name = document.getElementById("fname");
     let gender = document.getElementById("radio");
@@ -36,18 +35,21 @@ function validateForm() {
         name.nextElementSibling.innerHTML = "Name required";
         name.className = "error-border";
         name.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
-    } else if (!name.value.match(name_1)) {
+    }
+    else if (!name.value.match(name_1)) {
         name.className = "error-border";
         name.nextElementSibling.innerHTML = "Enter a valid name ";
         name.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
-    } else {
+    }
+    else {
         name.className = "green-border";
         name.nextElementSibling.innerHTML = " ";
         name.parentElement.querySelector('.fa-circle-exclamation').classList.remove('visible');
     }
     if (male== false && female == false && others == false) {
         gender.nextElementSibling.innerHTML = "Gender required";
-    } else {
+    }
+    else {
         gender.nextElementSibling.innerHTML = " ";
     }
 
@@ -55,11 +57,13 @@ function validateForm() {
         address.className = "error-border";
         address.nextElementSibling.innerHTML = "Address required";
         address.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
-    } else if (address.value.length <= 10) {
+    }
+    else if (address.value.length <= 10) {
         address.className = "error-border";
         address.nextElementSibling.innerHTML = "Enter a valid address";
         address.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
-    } else {
+    }
+    else {
         address.className = "green-border";
         address.nextElementSibling.innerHTML = " ";
         address.parentElement.querySelector('.fa-circle-exclamation').classList.remove('visible');
@@ -69,11 +73,13 @@ function validateForm() {
         email.className = "error-border ";
         email.nextElementSibling.innerHTML = "Email required";
         email.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
-    } else if (email.value != email.value.match(validemail)) {
+    }
+    else if (email.value != email.value.match(validemail)) {
         email.className = "error-border ";
         email.nextElementSibling.innerHTML = "Enter a valid Email";
         email.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
-    } else {
+    }
+    else {
         email.className = "green-border";
         email.nextElementSibling.innerHTML = " ";
         email.parentElement.querySelector('.fa-circle-exclamation').classList.remove('visible');
@@ -83,23 +89,27 @@ function validateForm() {
         mobile.className = "error-border";
         mobile.nextElementSibling.innerHTML = "Mobile number required";
         mobile.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
-    } else if (mobile.value != mobile.value.match(phoneno)) {
+    }
+    else if (mobile.value != mobile.value.match(phoneno)) {
         mobile.className = "error-border";
         mobile.nextElementSibling.innerHTML = "Enter a valid number";
         mobile.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
-    } else {
+    }
+    else {
         mobile.className = "green-border";
         mobile.nextElementSibling.innerHTML = " ";
         mobile.parentElement.querySelector('.fa-circle-exclamation').classList.remove('visible');
     }
     if (read == false && drive == false && garden == false) {
         hobby.nextElementSibling.innerHTML = "Hobby required";
-    } else {
+    }
+    else {
         hobby.nextElementSibling.innerHTML = " ";
     }
     if (bday.value.trim() == "") {
         bday.nextElementSibling.innerHTML = "DOB required";
-    } else {
+    }
+    else {
         bday.nextElementSibling.innerHTML = " ";
     }
 
@@ -107,45 +117,52 @@ function validateForm() {
         mark.nextElementSibling.innerHTML = "Percentage required";
         mark.className = "error-border";
         mark.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
-    } else if (mark.value <= 1 || mark.value >= 100) {
+    }
+    else if (mark.value <= 1 || mark.value >= 100) {
         mark.className = "error-border";
         mark.nextElementSibling.innerHTML = "Enter a valid percentage";
         mark.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
-    } else {
+    }
+    else {
         mark.className = "green-border";
         mark.nextElementSibling.innerHTML = " ";
         mark.parentElement.querySelector('.fa-circle-exclamation').classList.remove('visible');
     }
     if (level.value.trim() == " ") {
         level.nextElementSibling.innerHTML = "Range required";
-    } else {
+    }
+    else {
         level.nextElementSibling.innerHTML = " ";
     }
     if (files.value.trim() == "") {
         files.nextElementSibling.innerHTML = "File required";
         files.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
     }
-    else if (files.files.length > 0) {
-        for (const i = 0; i <= files.files.length - 1; i++) {
-
+    else if (files.files.length > 0)
+    {
+        for (const i = 0; i <= files.files.length - 1; i++)
+        {
             const fsize = files.files.item(i).size;
             const file = Math.round((fsize / 1024));
             if (file >= 2048) {
                 files.nextElementSibling.innerHTML = "Select a file less than 2mb";
                 files.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
-            } else if (file < 2048) {
+            }
+            else if (file < 2048)
+            {
                 files.className = "green-border";
                 files.nextElementSibling.innerHTML = "Uploaded";
                 files.parentElement.querySelector('.fa-circle-exclamation').classList.remove('visible');
-            }  else 
-            {
-                document.getElementById('size').innerHTML = '<b>'
-                + file + '</b> KB';
-               
             }
+            // else 
+            // {
+            //     document.getElementById('size').innerHTML = '<b>'
+            //     + file + '</b> KB';
+               
+            // }
         }
     } 
-    else {
+    else{
         files.nextElementSibling.innerHTML = " ";
         files.className = "green-border";
         files.parentElement.querySelector('.fa-circle-exclamation').classList.remove('visible');
@@ -154,11 +171,13 @@ function validateForm() {
         user.nextElementSibling.innerHTML = "Username required";
         user.className = "error-border";
         user.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
-    } else if (user.value!=user.value.match(validemail)) {
+    }
+    else if (user.value!=user.value.match(validemail)) {
         user.className = "error-border";
         user.nextElementSibling.innerHTML = "Enter a valid username";
         user.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
-    } else {
+    }
+    else {
         user.className = "green-border";
         user.nextElementSibling.innerHTML = " ";
         user.parentElement.querySelector('.fa-circle-exclamation').classList.remove('visible');
@@ -167,11 +186,13 @@ function validateForm() {
         pass1.className = "error-border";
         pass1.nextElementSibling.innerHTML = "Password required";
         pass1.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
-    } else if (pass1.value != pass1.value.match(password)) {
+    }
+    else if (pass1.value != pass1.value.match(password)) {
         pass1.className = "error-border";
         pass1.nextElementSibling.innerHTML = "Enter a valid password";
         pass1.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
-    } else {
+    }
+    else {
         pass1.className = "green-border";
         pass1.nextElementSibling.innerHTML = " ";
         pass1.parentElement.querySelector('.fa-circle-exclamation').classList.remove('visible');
@@ -180,7 +201,8 @@ function validateForm() {
         pass2.className = "error-border";
         pass2.nextElementSibling.innerHTML = "Confirm your password";
         pass2.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
-    } else {
+    }
+    else {
         pass2.className = "green-border";
         pass2.nextElementSibling.innerHTML = "";
         pass2.parentElement.querySelector('.fa-circle-exclamation').classList.remove('visible');
