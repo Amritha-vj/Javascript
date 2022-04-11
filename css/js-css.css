@@ -88,7 +88,7 @@ input {
 
 .row-4 {
     padding: 5px;
-    margin-left: 16px;
+    margin-left: 10px;
 }
 
 .course {
@@ -151,7 +151,7 @@ input {
 .rows {
     width: 67%;
     padding: 5px;
-    margin-left: 55px;
+    margin-left: 77px;
 }
 
 .general {
@@ -173,7 +173,7 @@ input {
     margin-bottom: 83px;
 }
 .address-1 {
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 .col-1 {
@@ -183,9 +183,8 @@ input {
 
 .col-2 {
     padding: 5px;
-    margin-left: 76px;
+    margin-left: 55px;
 }
-
 .login {
     border: 1px solid #bfbfbf;
     width: 82%;
@@ -276,7 +275,7 @@ button {
 
 .email-1 {
     margin-right: 30px;
-    margin-bottom: 22px;
+    margin-bottom: 30px;
 }
 
 .mobile {
@@ -286,9 +285,8 @@ button {
 
 .mobile-1 {
     margin-right: 30px;
-    margin-bottom: 41px;
+    margin-bottom: 44px;
 }
-
 .hobby-1 {
     margin-right: 30px;
     margin-bottom: 28px;

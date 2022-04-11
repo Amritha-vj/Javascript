@@ -1,201 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="css/js-css.css">
-    <script src="js/icon.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript</title>
-</head>
-<body>
-    <div class="border">
-        <div class="heading">
-            <h2>
-                REGISTRATION FORM
-            </h2>
-        </div>
-        <form action="#" onclick="validateForm()" id="myForm">
-            <div class="personal">
-                <h3>
-                    Personal Details
-                </h3>
-                <div class="general">
-                    <div class="rows-1">
-                        <div class="name">
-                            <label for="fname">Name:&nbsp;<sup><i class="fa-solid fa-asterisk"></i></sup> </label>
-                        </div>
-                        <div class="gender">
-                            <label>Gender &nbsp;<sup><i class="fa-solid fa-asterisk"></i></sup></label>
-                        </div>
-                        <div class="address">
-                            <label class="adress-1">Address</label>
-                        </div>
-                        <div class="email">
-                            <label>Email &nbsp;<sup><i class="fa-solid fa-asterisk"></i></sup></label>
-                        </div>
-                        <div class="mobile">
-                            <label>Mobile Number <sup><i class="fa-solid fa-asterisk"></i></sup></label>
-                        </div>
-                        <div class="hobby">
-                            <label> Choose hobbies</label>
-                        </div>
-                        <div class="bday">
-                            <label>Date of Birth &nbsp;<sup><i class="fa-solid fa-asterisk"></i></sup></label>
-                        </div>
-                    </div>
-                    <div class=rows>
-                        <div class="name-1">
-                            <i class="fa-solid fa-circle-exclamation"></i>
-                            <input type="text" id="fname" name="fname" placeholder="Enter the name" onblur="validateForm()">
-                           <span class="errors"></span>&nbsp;
-                        </div>
-                        <div class="gender" id="gender">
-                            <span id="radio">
-                                <input type="radio" id="male" name="male" value="Male" class="common" onblur="validateForm()">
-                                  <label>Male</label>
-                                <input type="radio" id="female" name="female" value="Female" class="common" onblur="validateForm()">
-                                  <label >Female</label>
-                                <input type="radio" id="others" name="others" value="Others" class="common" onblur="validateForm()">
-                                  <label>Others</label>
-                            </span>
-                            <span class="errors">
-                            </span>
-                        </div>
-                        <div class="address-1">
-                            <i class="fa-solid fa-circle-exclamation"></i>
-                            <textarea name="address-1" rows="4" cols="23" id="address-1" placeholder="Enter the Address" onblur="validateForm()"></textarea>
-                            <span class="errors">
-                            </span>
-                        </div>
-                        <div class="email-1">
-                            <i class="fa-solid fa-circle-exclamation"></i>
-                            <input type="email" id="email" name="email" placeholder="Enter the Email" onblur="validateForm()">
-                            <span class="errors">
-                            </span>
-                        </div>
-                        <div class="mobile-1">
-                            <i class="fa-solid fa-circle-exclamation"></i>
-                            <input type="text" id="mob" name="mob" placeholder="Enter the Mobile number" onblur="validateForm()">
-                            <span class="errors">
-                            </span>
-                        </div>
-                        <div class="hobby-1">
-                            <span id="check">
-                                <input type="checkbox" id="read" name="read" class="common-1" onblur="validateForm()">
-                                <label for="read"> Reading</label>
-                                <input type="checkbox" id="drive" name="drive" class="common-1" onblur="validateForm()">
-                                <label for="drive">Driving</label>
-                                <input type="checkbox" id="garden" name="garden" class="common-1" onblur="validateForm()">
-                                <label for="garden"> Gardening</label>
-                            </span>
-                            <span class="errors">
-                            </span>
-                        </div>
-                        <div class="bday-1">
-                            <input type="date" id="birthday" name="birthday" onblur="validateForm()">
-                            <span class="errors">
-                            </span>
-                        </div>
-                    </div>
-                </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="css/js-css.css">
+        <script src="js/icon.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript</title>
+    </head>
+    <body>
+        <div class="border">
+            <div class="heading">
+                <h2>
+                    REGISTRATION FORM
+                </h2>
             </div>
-
-            <div class="login">
-                <h3>
-                    Login credentials
-                </h3>
-                <div class="row-3">
-                    <div class="col-1">
-                        <div class="user">
-                            <label>Username &nbsp;<sup><i class="fa-solid fa-asterisk"></i></sup></label>
+            <form action="#" onclick="validateForm()" id="myForm">
+                <div class="personal">
+                    <h3>
+                        Personal Details
+                    </h3>
+                    <div class="general">
+                        <div class="rows-1">
+                            <div class="name">
+                                <label for="fname">Name:&nbsp;<sup><i class="fa-solid fa-asterisk"></i></sup> </label>
+                            </div>
+                            <div class="gender">
+                                <label>Gender &nbsp;<sup><i class="fa-solid fa-asterisk"></i></sup></label>
+                            </div>
+                            <div class="address">
+                                <label class="adress-1">Address</label>
+                            </div>
+                            <div class="email">
+                                <label>Email &nbsp;<sup><i class="fa-solid fa-asterisk"></i></sup></label>
+                            </div>
+                            <div class="mobile">
+                                <label>Contact &nbsp;<sup><i class="fa-solid fa-asterisk"></i></sup></label>
+                            </div>
+                            <div class="hobby">
+                                <label> Hobbies</label>
+                            </div>
+                            <div class="bday">
+                                <label>Date of Birth &nbsp;<sup><i class="fa-solid fa-asterisk"></i></sup></label>
+                            </div>
                         </div>
-                        <div class="pass-1">
-                            <label>Password &nbsp;<sup><i class="fa-solid fa-asterisk"></i></sup></label>
-                        </div>
-                        <div class="pass-2">
-                            <label>Confirm password &nbsp;<sup><i class="fa-solid fa-asterisk"></i></sup></label>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div>
-                            <i class="fa-solid fa-circle-exclamation"></i>
-                            <input type="email" id="uname" name="uname" placeholder="example@email.com" onblur="validateForm()">
-                            <span class="errors">
-                            </span>
-                            <div>
+                        <div class=rows>
+                            <div class="name-1">
                                 <i class="fa-solid fa-circle-exclamation"></i>
-                                <input type="password" id="password-1" name="password-1" placeholder="Enter the Password" onblur="validateForm()">
+                                <input type="text" id="fname" name="fname" placeholder="Enter the name" onblur="validateForm()">
+                            <span class="errors"></span>&nbsp;
+                            </div>
+                            <div class="gender" id="gender">
+                                <span id="radio">
+                                    <input type="radio" id="male" name="male" value="Male" class="common" onblur="validateForm()">
+                                      <label>Male</label>
+                                    <input type="radio" id="female" name="female" value="Female" class="common" onblur="validateForm()">
+                                      <label >Female</label>
+                                    <input type="radio" id="others" name="others" value="Others" class="common" onblur="validateForm()">
+                                      <label>Others</label>
+                                </span>
+                                <span class="errors">
+                                </span>
+                            </div>
+                            <div class="address-1">
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <textarea name="address-1" rows="4" cols="23" id="address-1" placeholder="Enter the Address" onblur="validateForm()"></textarea>
+                                <span class="errors">
+                                </span>
+                            </div>
+                            <div class="email-1">
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <input type="email" id="email" name="email" placeholder="Enter the Email" onblur="validateForm()">
+                                <span class="errors">
+                                </span>
+                            </div>
+                            <div class="mobile-1">
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <input type="text" id="mob" name="mob" placeholder="Enter the Mobile number" onblur="validateForm()">
+                                <span class="errors">
+                                </span>
+                            </div>
+                            <div class="hobby-1">
+                                <span id="check">
+                                    <input type="checkbox" id="read" name="read" class="common-1" onblur="validateForm()">
+                                    <label for="read"> Reading</label>
+                                    <input type="checkbox" id="drive" name="drive" class="common-1" onblur="validateForm()">
+                                    <label for="drive">Driving</label>
+                                    <input type="checkbox" id="garden" name="garden" class="common-1" onblur="validateForm()">
+                                    <label for="garden"> Gardening</label>
+                                </span>
+                                <span class="errors">
+                                </span>
+                            </div>
+                            <div class="bday-1">
+                                <input type="date" id="birthday" name="birthday" onblur="validateForm()">
                                 <span class="errors">
                                 </span>
                             </div>
                         </div>
-                        <div>
-                            <i class="fa-solid fa-circle-exclamation"></i>
-                            <input type="password" id="password-2" name="password-2" placeholder="Confirm password" onblur="validateForm()">
-                            <span class="errors">
-                            </span>
+                    </div>
+                </div>
+
+                <div class="login">
+                    <h3>
+                        Login credentials
+                    </h3>
+                    <div class="row-3">
+                        <div class="col-1">
+                            <div class="user">
+                                <label>Username &nbsp;<sup><i class="fa-solid fa-asterisk"></i></sup></label>
+                            </div>
+                            <div class="pass-1">
+                                <label>Password &nbsp;<sup><i class="fa-solid fa-asterisk"></i></sup></label>
+                            </div>
+                            <div class="pass-2">
+                                <label>Confirm password &nbsp;<sup><i class="fa-solid fa-asterisk"></i></sup></label>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div>
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <input type="email" id="uname" name="uname" placeholder="example@email.com" onblur="validateForm()">
+                                <span class="errors">
+                                </span>
+                                <div>
+                                    <i class="fa-solid fa-circle-exclamation"></i>
+                                    <input type="password" id="password-1" name="password-1" placeholder="Enter the Password" onblur="validateForm()">
+                                    <span class="errors">
+                                    </span>
+                                </div>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <input type="password" id="password-2" name="password-2" placeholder="Confirm password" onblur="validateForm()">
+                                <span class="errors">
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="education">
-                <h3>Educational details</h3>
-                <div class="details">
-                    <div class="row-2">
-                        <div class="column-1">
-                            <label for="courses" class="space">Choose a courses:</label>
+                <div class="education">
+                    <h3>Educational details</h3>
+                    <div class="details">
+                        <div class="row-2">
+                            <div class="column-1">
+                                <label for="courses" class="space">Choose a courses:</label>
+                            </div>
+                            <div class="column-2">
+                                Percentage of marks &nbsp;<sup><i class="fa-solid fa-asterisk"></i></sup>
+                            </div>
+                            <div class="column-3">
+                                <label>Rate your programming level:</label>
+                            </div>
+                            <div class="column-4">
+                                <label>Upload CV &nbsp;<sup><i class="fa-solid fa-asterisk"></i></sup></label>
+                            </div>
                         </div>
-                        <div class="column-2">
-                            Percentage of marks &nbsp;<sup><i class="fa-solid fa-asterisk"></i></sup>
-                        </div>
-                        <div class="column-3">
-                            <label>Rate your programming level:</label>
-                        </div>
-                        <div class="column-4">
-                            <label>Upload CV</label>
-                        </div>
-                    </div>
-                    <div class="row-4">
-                        <div class="course">
-                            <select id="courses" name="courses">
-                                <option value="c-1">M.Tech</option>
-                                <option value="c-2">M.Sc</option>
-                                <option value="c-3">MCA</option>
-                                <option value="c-4">B.Tech</option>
-                                <option value="c-5">B.Sc</option>
-                                <option value="c-6">BCA</option>
-                                <option value="c-7">Diploma</option>
-                                <option value="c-8">Plus Two</option>
-                            </select>
-                        </div>
-                        <div class="percentage">
-                            <i class="fa-solid fa-circle-exclamation"></i>
-                            <input type="text" id="mark" name="mark" placeholder="Enter the percentage" onblur="validateForm()">
-                            <span class="errors">
-                            </span>
-                        </div>
-                        <div class="gpa">
-                            <input type="range" id="vol" name="vol" min="0" max="10" onblur="validateForm()">
-                            <span class="errors">
-                            </span>
-                        </div> 
-                        <div class="upload">
-                            <i class="fa-solid fa-circle-exclamation"></i>
-                            <input type="file" id="myFile" name="file" onblur="validateForm()">
-                            <span class="errors">
-                            </span>
+                        <div class="row-4">
+                            <div class="course">
+                                <select id="courses" name="courses">
+                                    <option value="c-1">M.Tech</option>
+                                    <option value="c-2">M.Sc</option>
+                                    <option value="c-3">MCA</option>
+                                    <option value="c-4">B.Tech</option>
+                                    <option value="c-5">B.Sc</option>
+                                    <option value="c-6">BCA</option>
+                                    <option value="c-7">Diploma</option>
+                                    <option value="c-8">Plus Two</option>
+                                </select>
+                            </div>
+                            <div class="percentage">
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <input type="text" id="mark" name="mark" placeholder="Enter the percentage" onblur="validateForm()">
+                                <span class="errors">
+                                </span>
+                            </div>
+                            <div class="gpa">
+                                <input type="range" id="vol" name="vol" min="0" max="10" onblur="validateForm()">
+                                <span class="errors">
+                                </span>
+                            </div> 
+                            <div class="upload">
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <input type="file" id="myFile" name="file" onblur="validateForm()">
+                                <span class="errors">
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-
-            
-            <button type="submit" id="submit" class="button" value="Submit">Submit</button>
-        </form>
-    </div>
-    <script src="js/new.js"></script>
-</body>
+                <button type="submit" id="submit" class="button" value="Submit">Submit</button>
+            </form>
+        </div>
+        <script src="js/new.js"></script>
+    </body>
 </html>

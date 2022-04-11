@@ -25,117 +25,94 @@ function validateForm() {
     let files = document.getElementById("myFile");
     let phoneno = /[0-9]{10}/;
     let name_1 = /^[a-zA-Z]*$/;
-    // let special = /[!@#$%^&*]/;
-    // let house = /[A-Za-z0-9'\.\-\s\,]/;
     let password = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$/;
     var validemail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     var usermail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-
     if (name.value.trim() == "") {
-        name.nextElementSibling.innerHTML = "Name required";
-        name.className = "error-border";
-        name.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
+        name.nextElementSibling.innerText = "Name required";
+         errors(name);
     }
     else if (!name.value.match(name_1)) {
-        name.className = "error-border";
-        name.nextElementSibling.innerHTML = "Enter a valid name ";
-        name.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
+        name.nextElementSibling.innerText = "Enter a valid name ";
+        errors(name);
     }
     else {
-        name.className = "green-border";
-        name.nextElementSibling.innerHTML = " ";
-        name.parentElement.querySelector('.fa-circle-exclamation').classList.remove('visible');
+        success(name);
     }
     if (male== false && female == false && others == false) {
-        gender.nextElementSibling.innerHTML = "Gender required";
+        gender.nextElementSibling.innerText = "Gender required";
     }
     else {
-        gender.nextElementSibling.innerHTML = " ";
+        gender.nextElementSibling.innerText = " ";
     }
 
     if (address.value.trim() == "") {
-        address.className = "error-border";
-        address.nextElementSibling.innerHTML = "Address required";
-        address.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
+        address.nextElementSibling.innerText = "Address required";
+        errors(address);
     }
     else if (address.value.length <= 10) {
-        address.className = "error-border";
-        address.nextElementSibling.innerHTML = "Enter a valid address";
-        address.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
+        address.nextElementSibling.innerText = "Enter a valid address";
+        errors(address);
     }
     else {
-        address.className = "green-border";
-        address.nextElementSibling.innerHTML = " ";
-        address.parentElement.querySelector('.fa-circle-exclamation').classList.remove('visible');
+        success(address);
     }
 
     if (email.value.trim() == "") {
-        email.className = "error-border ";
-        email.nextElementSibling.innerHTML = "Email required";
-        email.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
+        email.nextElementSibling.innerText = "Email required";
+        errors(email);
     }
     else if (email.value != email.value.match(validemail)) {
-        email.className = "error-border ";
-        email.nextElementSibling.innerHTML = "Enter a valid Email";
-        email.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
+        email.nextElementSibling.innerText = "Enter a valid Email";
+        errors(email);
     }
     else {
-        email.className = "green-border";
-        email.nextElementSibling.innerHTML = " ";
-        email.parentElement.querySelector('.fa-circle-exclamation').classList.remove('visible');
+        success(email);
     }
 
     if (mobile.value.trim() == "") {
-        mobile.className = "error-border";
-        mobile.nextElementSibling.innerHTML = "Mobile number required";
-        mobile.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
+        mobile.nextElementSibling.innerText = "Mobile number required";
+        errors(mobile);
     }
     else if (mobile.value != mobile.value.match(phoneno)) {
-        mobile.className = "error-border";
-        mobile.nextElementSibling.innerHTML = "Enter a valid number";
-        mobile.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
+        mobile.nextElementSibling.innerText = "Enter a valid number";
+        errors(mobile);
     }
     else {
-        mobile.className = "green-border";
-        mobile.nextElementSibling.innerHTML = " ";
-        mobile.parentElement.querySelector('.fa-circle-exclamation').classList.remove('visible');
+        success(mobile);
     }
     if (read == false && drive == false && garden == false) {
-        hobby.nextElementSibling.innerHTML = "Hobby required";
+        hobby.nextElementSibling.innerText = "Hobby required";
     }
     else {
-        hobby.nextElementSibling.innerHTML = " ";
+        hobby.nextElementSibling.innerText = " ";
     }
     if (bday.value.trim() == "") {
-        bday.nextElementSibling.innerHTML = "DOB required";
+        bday.nextElementSibling.innerText = "DOB required";
     }
     else {
-        bday.nextElementSibling.innerHTML = " ";
+        bday.nextElementSibling.innerText = " ";
     }
 
     if (mark.value.trim() == "") {
-        mark.nextElementSibling.innerHTML = "Percentage required";
-        mark.className = "error-border";
-        mark.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
+        mark.nextElementSibling.innerText = "Percentage required";
+        errors(mark);
     }
     else if (mark.value <= 1 || mark.value >= 100) {
-        mark.className = "error-border";
-        mark.nextElementSibling.innerHTML = "Enter a valid percentage";
-        mark.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
+        mark.nextElementSibling.innerText = "Enter a valid percentage";
+        errors(mark);
     }
     else {
-        mark.className = "green-border";
-        mark.nextElementSibling.innerHTML = " ";
-        mark.parentElement.querySelector('.fa-circle-exclamation').classList.remove('visible');
+        success(mark);
     }
     if (level.value.trim() == " ") {
-        level.nextElementSibling.innerHTML = "Range required";
+        level.nextElementSibling.innerText = "Range required";
     }
     else {
-        level.nextElementSibling.innerHTML = " ";
+        level.nextElementSibling.innerText = " ";
     }
     if (files.value.trim() == "") {
-        files.nextElementSibling.innerHTML = "File required";
+        files.nextElementSibling.innerText = "File required";
         files.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
     }
     else if (files.files.length > 0)
@@ -145,66 +122,73 @@ function validateForm() {
             const fsize = files.files.item(i).size;
             const file = Math.round((fsize / 1024));
             if (file >= 2048) {
-                files.nextElementSibling.innerHTML = "Select a file less than 2mb";
+                files.nextElementSibling.innerText = "Select a file less than 2mb";
                 files.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
             }
             else if (file < 2048)
             {
                 files.className = "green-border";
-                files.nextElementSibling.innerHTML = "Uploaded";
+                files.nextElementSibling.innerText = "Uploaded";
                 files.parentElement.querySelector('.fa-circle-exclamation').classList.remove('visible');
             }
-            // else 
-            // {
-            //     document.getElementById('size').innerHTML = '<b>'
-            //     + file + '</b> KB';
+            else 
+            {
+                document.getElementById('size').innerHTML = '<b>'
+                + file + '</b> KB';
                
-            // }
+            }
         }
     } 
     else{
-        files.nextElementSibling.innerHTML = " ";
-        files.className = "green-border";
-        files.parentElement.querySelector('.fa-circle-exclamation').classList.remove('visible');
+        success(files);
     }
     if (user.value.trim() == "") {
-        user.nextElementSibling.innerHTML = "Username required";
-        user.className = "error-border";
-        user.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
+        user.nextElementSibling.innerText = "Username required";
+        errors(user);
     }
     else if (user.value!=user.value.match(validemail)) {
-        user.className = "error-border";
-        user.nextElementSibling.innerHTML = "Enter a valid username";
-        user.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
+        user.nextElementSibling.innerText = "Enter a valid username";
+        errors(user);
     }
     else {
-        user.className = "green-border";
-        user.nextElementSibling.innerHTML = " ";
-        user.parentElement.querySelector('.fa-circle-exclamation').classList.remove('visible');
+        success(user);
     }
     if (pass1.value.trim() == "") {
-        pass1.className = "error-border";
-        pass1.nextElementSibling.innerHTML = "Password required";
-        pass1.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
+        pass1.nextElementSibling.innerText = "Password required";
+        errors(pass1);
+       
     }
     else if (pass1.value != pass1.value.match(password)) {
-        pass1.className = "error-border";
-        pass1.nextElementSibling.innerHTML = "Enter a valid password";
-        pass1.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
+        pass1.nextElementSibling.innerText = "Enter a valid password";
+        errors(pass1);
     }
     else {
-        pass1.className = "green-border";
-        pass1.nextElementSibling.innerHTML = " ";
-        pass1.parentElement.querySelector('.fa-circle-exclamation').classList.remove('visible');
+        success(pass1);
+    }
+    if (pass2.value.trim() == "") {
+        pass2.nextElementSibling.innerText = "Confirm Password required";
+        errors(pass2);
+       
+    }
+    else if (pass2.value != pass2.value.match(password)) {
+        pass1.nextElementSibling.innerText = "Enter a valid password";
+        errors(pass2);
+    }
+    else {
+        success(pass2);
     }
     if (pass2.value != pass1.value) {
-        pass2.className = "error-border";
-        pass2.nextElementSibling.innerHTML = "Confirm your password";
-        pass2.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
+        pass2.nextElementSibling.innerText = "Confirm your password";
+        errors(pass2);
     }
-    else {
-        pass2.className = "green-border";
-        pass2.nextElementSibling.innerHTML = "";
-        pass2.parentElement.querySelector('.fa-circle-exclamation').classList.remove('visible');
-    }
+   
+}
+function errors (x) {
+    x.className = "error-border";
+    x.parentElement.querySelector('.fa-circle-exclamation').classList.add('visible');
+}
+function success (y){
+    y.nextElementSibling.innerText = "";
+    y.className = "green-border";
+    y.parentElement.querySelector('.fa-circle-exclamation').classList.remove('visible');
 }
