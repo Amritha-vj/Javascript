@@ -18,11 +18,13 @@ input {
 }
 
 .upload input {
-    width: 72%;
+    width: auto;
     font-size: 11px;
     border: none;
 }
-
+.green{
+    color: #00b300;
+}
 .border {
     border: 2px solid #bfbfbf;
     padding: 5px;
