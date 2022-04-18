@@ -26,6 +26,8 @@ function validateForm() {
     let bday = $("#birthday");
     let files = $("#myFile");
     let phoneno = /[0-9]{10}/;
+    let percent=/[0-9]+([\.][0-9]{0,2})?/
+    // let per=/^((0|[1-9]\d?)(\.\d{1,2})?|100(\.00?)?)$/;
     let name_1 = /^[a-zA-Z]*$/;
     var validemail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     let password = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$/;
@@ -131,8 +133,8 @@ function validateForm() {
     {
         errors(mark, "Percentage required");
     }
-    else if (mark.val() <= 1 || mark.val() >= 100||name.val().match(name_1))
-    {
+    else if (mark.val() <= 1 || mark.val() >= 100||mark.val().match(name_1))
+    {   
         errors(mark, "Enter a valid percentage");
     }
     else
