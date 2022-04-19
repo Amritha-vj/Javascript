@@ -1,5 +1,4 @@
 *{
-    /* font-size: 12px; */
     box-sizing: border-box;
     font-family: sans-serif;
 }
@@ -14,7 +13,6 @@ body {
     padding-bottom: 13%;
 }
 .header{
-    /* border: 4px solid rgb(59, 168, 236); */
     background-color:rgb(59, 168, 236) ;
     color: white;
     width: 98%;
@@ -29,13 +27,11 @@ h1{
 .fa-circle-chevron-down{
     color:rgb(59, 168, 236) ;
     font-size: 20px;
-    /* text-align: right; */
     float: right;
 }
 .fa-circle-chevron-up{
     color:rgb(59, 168, 236) ;
     font-size: 20px;
-    /* text-align: right; */
     float: right;
 }
 .button {
@@ -43,10 +39,8 @@ h1{
     color: black;
     cursor: pointer;
     padding: 18px;
-   
     border: none;
     margin-top: 20px;
-    
     text-align: left;
     outline: none;
     margin-bottom: 10px;
@@ -55,31 +49,26 @@ h1{
  .button:hover {
     background-color: rgb(59, 168, 236);
     color: #fff;
-  }
-   .button:hover .fa-circle-chevron-down{
+}
+.button:hover .fa-circle-chevron-down{
     transform: rotate(180deg);
-  }
-/* .button .active{
-   
-    background-color:rgb(59, 168, 236) ;
-} */
+}
 p{
     text-align: justify;
 }
 .panel {
     padding: 0 18px;
     width: 100%;
-    /* margin-left: -2%; */
     display: none;
     background-color: white;
     overflow: hidden;
 }
-  .active{
+.active{
     background-color: #3495d9;
     color: white;
-  }
-  .accordion{
+}
+.accordion{
     width: 30%;
     margin-left: 35%;
     margin: 0 auto;
-  }
+}

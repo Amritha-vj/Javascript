@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     $("#open").click(function () {
       $(".modalContent").addClass("view");
     })

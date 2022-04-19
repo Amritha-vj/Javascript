@@ -1,7 +1,5 @@
 $(document).ready(function(){
-    // alert(this);
     $(".button").click(function(){
-    //  alert(this);
     if($(this).hasClass("active")){
       $(this).removeClass("active").next().slideUp();
       $(this).children("i").removeClass("fa-circle-chevron-up").addClass("fa-circle-chevron-down");
