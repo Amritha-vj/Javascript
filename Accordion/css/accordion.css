@@ -68,12 +68,12 @@ p{
 }
 .panel {
     padding: 0 18px;
-    width: 30%;
-    margin-left: 35%;
+    width: 100%;
+    /* margin-left: -2%; */
     display: none;
     background-color: white;
     overflow: hidden;
-  }
+}
   .active{
     background-color: #3495d9;
     color: white;
