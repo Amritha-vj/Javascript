@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    font-size: 13px;
 }
 body {
     padding: 0;
@@ -9,4 +10,143 @@ body {
 .image{
     height: 50px;
     width: 80px;
+}
+.size {
+    width: 500px;
+}
+.fa-search {
+    position: absolute;
+    opacity: 0.3;
+    margin-top: 11px;
+}
+.input-1{
+    border: none;
+    box-shadow: 0 5px 5px rgb(240, 235, 235) ;
+}
+.input-1::placeholder{
+    padding-left: 30px;
+    opacity: 0.3;
+   
+}
+.select{
+    padding: 5px;
+    margin-top: 20px;
+}
+.sizeOne{
+    font-size: 16px;
+    font-weight: 400;
+}
+.sizeTwo{
+    font-size: 16px;
+    font-weight: 400;
+}
+.fa-angle-right{
+    color: red;
+}
+.buttons {
+    /* width: 50%; */
+    margin-top: 20px;
+}
+.btn-1{
+    width:50%;
+}
+.btn-2{
+    width:40%;
+    border: 1px solid rgb(228, 220, 220);
+
+}
+.circle{
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid rgb(236, 234, 234);
+    text-align: center;
+}
+.padding{
+    padding-left: 10px;
+    margin-left: 90px;
+    opacity: 0.8;
+    display: flex;
+   
+    justify-content: space-between;
+}
+.fa-user{
+    padding-left: 15px;
+    font-size: 20px;
+    opacity: 0.3;
+}
+.fa-heart{
+    padding-left: 15px;
+    font-size: 20px;
+    opacity: 0.3;
+}
+.fa-bag-shopping{
+    font-size: 20px;
+    opacity: 0.3;
+    padding-left: 6px;
+}
+.fa-star{
+    color: green;
+
+}
+hr{
+    opacity: 0.3;
+    height: 25px;
+}
+h5{
+    color: #535665;
+    font-size: 20px;
+    opacity: .8;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+    font-size: 15px;
+}
+.clear{
+    clear: both;
+}
+.profile{
+    width: 100%;
+    height:100%;
+}
+.width{
+    width: 150px;
+}
+.orange{
+    color: orangered;
+    font-size: 22px;
+    font-weight: 500;
+}
+.green{
+    color: green;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 2px;
+    opacity: 0.7;
+}
+.font{
+    font-size: 22px;
+    font-weight: 700;
+}
+.del{
+    opacity: 0.3;
+    font-size: 22px;
+    font-weight: 200;
+}
+.width-1{
+    width: 50%;
+    margin-top: 20px;
+}
+.width-1 ::placeholder{
+    padding-left: 5px;
+    opacity: 0.7;
+    justify-content: end;
+}
+.font-1{
+    font-size: 16px !important;
+    font-weight: 100;
 }
