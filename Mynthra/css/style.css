@@ -171,9 +171,69 @@ a{
 .equal{
     width:50%;
 }
+.equal-1{
+    width:30%;
+    border-right: 1px solid rgb(228, 218, 218);
+}
 .small{
     font-weight: 300;
     padding: 5px;
     font-size: 12px !important;
     opacity: 0.7;
+}
+.small-text{
+    font-weight: 300;
+    font-size: 16px !important;
+
+}
+.font-1 .fa-star{
+    color: black;
+}
+.light{
+    font-weight: 300;
+    font-size: 36px !important  ;
+}
+.large-star{
+    font-size: 30px;
+    color: rgb(21, 197, 115) !important;
+}
+.small-star{
+    font-size: 10px;
+    opacity: 0.5;
+}
+.width-pg{
+    height: 3px;
+    width: 50%;
+}
+.progress{
+    height: 5px;
+    width: 40%;
+    
+}
+.fonts{
+    font-size: 16px !important;
+    font-weight: 500;
+
+}
+.box{
+    background-color: rgb(5, 203, 137);
+    color: white;
+    width: 20px;
+    padding: 2px;
+    font-size: 8px;
+}
+.box .fa-star{
+    font-size: 8px;
+    color: white;
+}
+.like{
+    font-size: 12px;
+    font-weight: 200;
+}
+.dislike{
+    padding-left: 55%;
+}
+.resize{
+    width: 50px;
+    height: 50px;
 }
