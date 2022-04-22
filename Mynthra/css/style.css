@@ -259,3 +259,17 @@ a{
 .gap{
     margin-left: 20px;
 }
+.gap .orange{
+    font-size: 10px !important;
+}
+.bold{
+    font-size: 16px !important;
+    font-weight: 600;
+}
+.btn{
+    border-radius: 30px;
+    padding: 15px;
+}
+.space{
+    padding-left: 25%;
+}
