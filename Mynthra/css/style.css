@@ -22,6 +22,7 @@ body {
 .input-1{
     border: none;
     box-shadow: 0 5px 5px rgb(240, 235, 235) ;
+    background-color: #e6e7eb;
 }
 .input-1::placeholder{
     padding-left: 30px;
@@ -273,12 +274,14 @@ a{
 .space{
     padding-left: 25%;
 }
-.button-new{
+.button-new {
     width: 30px;
-    height: 10px;
+    height: 16px;
     color: white;
     border-radius: 8px;
-    font-size: 8px !important;
+    background-color: red;
+    font-size: 6px !important;
+    padding: 2px;
 }
 .app{
     width: 70%;
@@ -306,4 +309,7 @@ a{
 }
 .footer-font{
     font-size: 14px !important;
+}
+.gap-1{
+    padding-left: 30px;
 }
