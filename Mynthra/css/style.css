@@ -7,21 +7,43 @@ body {
     padding: 0;
     margin: 0;
 }
-.image{
-    height: 50px;
-    width: 80px;
+.image {
+    height: 40px;
+    width: 70px;
+}
+.small-font{
+    font-size: 12px !important;
 }
 .size {
-    width: 500px;
+    width: 400px;
 }
 .fa-search {
     position: absolute;
     opacity: 0.3;
     margin-top: 11px;
 }
+/* .nav-item :hover{
+    /* /* border-bottom: 3px solid red; */
+    /* position: relative; 
+
+}
+ .nav-item{
+    /* border-bottom: 3px solid red; */
+ /* }  */ 
+.nav-item :hover{
+    border-bottom: 3px solid red;
+    /* position: relative; */
+}
+.nav-item :hover{
+    border-bottom: 3px solid red;
+    /* position: relative; */
+}
+.nav-item :hover .content-list{
+    visibility: visible;
+}
 .input-1{
     border: none;
-    box-shadow: 0 5px 5px rgb(240, 235, 235) ;
+    box-shadow: 0 5px 5px #e6e7eb ;
     background-color: #e6e7eb;
 }
 .input-1::placeholder{
@@ -65,27 +87,29 @@ body {
     border: 1px solid rgb(236, 234, 234);
     text-align: center;
 }
-.padding{
-    padding-left: 10px;
-    margin-left: 90px;
+.padding {
+    /* padding-left: 10px; */
+    margin-left: 30px;
     opacity: 0.8;
     display: flex;
-   
     justify-content: space-between;
 }
 .fa-user{
     padding-left: 15px;
+    color: black !important;
     font-size: 20px;
-    opacity: 0.3;
+    /* opacity: 0.3; */
 }
 .fa-heart{
     padding-left: 15px;
+    color: black !important;
     font-size: 20px;
-    opacity: 0.3;
+    /* opacity: 0.3; */
 }
 .fa-bag-shopping{
     font-size: 20px;
-    opacity: 0.3;
+    color: black !important;
+    /* opacity: 0.3; */
     padding-left: 6px;
 }
 .fa-star{
@@ -223,6 +247,40 @@ a{
     padding: 2px;
     font-size: 8px;
 }
+.box-1 {
+    position: absolute;
+    bottom: 158px;
+    left: 10px;
+    background-color: rgb(226, 231, 230);
+    color: rgb(17, 16, 16);
+    width: 31px;
+    padding: 2px;
+    font-size: 10px !important;
+}
+.box-2 {
+    position: absolute;
+    bottom: 170px;
+    left: 10px;
+    background-color: rgb(226, 231, 230);
+    color: rgb(17, 16, 16);
+    width: 31px;
+    padding: 2px;
+    font-size: 10px !important;
+}
+.box-3 {
+    position: absolute;
+    bottom: 150px;
+    left: 10px;
+    background-color: rgb(226, 231, 230);
+    color: rgb(17, 16, 16);
+    width: 31px;
+    padding: 2px;
+    font-size: 10px !important;
+}
+.fa-star-half{
+    font-size: 10px;
+    color:rgb(0, 128, 0)
+}
 .box .fa-star{
     font-size: 8px;
     color: white;
@@ -232,13 +290,13 @@ a{
     font-weight: 200;
 }
 .dislike {
-    padding-left: 45%;
+    padding-left: 37%;
 }
 .dislike-3 {
-    padding-left: 48%;
+    padding-left: 41%;
 }
 .dislike-2 {
-    padding-left: 50%;
+    padding-left: 43%;
 }
 .details-1{
     font-size: 14px;
@@ -313,3 +371,39 @@ a{
 .gap-1{
     padding-left: 30px;
 }
+.card-title{
+    color: black;
+    font-size: 15px !important;
+    font-weight: 700;
+}
+.card-text{
+    opacity: 0.7;
+    font-size: 12px !important;
+}
+.border-line{
+    border-bottom: 2px solid red;
+}
+.content-list{
+    position: absolute;
+    top: 90px;
+    left: 124px;
+    background-color: white;
+    padding: 50px;
+    padding-top: 5px;
+    display: none;
+}
+.content-list-1{
+    position: absolute;
+    top: 90px;
+    left: 124px;
+    background-color: white;
+    padding: 50px;
+    padding-top: 5px;
+    display: none;
+}
+.nav-link:hover .content-list {
+    display: flex;
+}
+/* .col-sm-1{
+    width: 50px;
+} */
