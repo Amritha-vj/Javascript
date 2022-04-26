@@ -14,8 +14,11 @@ body {
 .small-font{
     font-size: 12px !important;
 }
+.small-font-1{
+    font-size: 14px !important;
+}
 .size {
-    width: 400px;
+    width: 300px;
 }
 .fa-search {
     position: absolute;
@@ -47,9 +50,8 @@ body {
     background-color: #e6e7eb;
 }
 .input-1::placeholder{
-    padding-left: 30px;
+    padding-left: 20px;
     opacity: 0.3;
-   
 }
 .select{
     padding: 5px;
@@ -395,13 +397,13 @@ a{
 .border-line{
     border-bottom: 2px solid red;
 }
-.content-list{
+.content-list {
     position: absolute;
-    top: 90px;
+    top: 65px;
     left: 124px;
-    background-color: white;
-    padding: 50px;
-    padding-top: 5px;
+    background-color: rgb(255, 255, 255);
+    padding: 32px;
+    padding-top: 25px;
     display: none;
 }
 .card-icon
