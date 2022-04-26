@@ -78,11 +78,18 @@ body {
     border: 1px solid rgb(228, 220, 220);
 
 }
+.none{
+    border: none;
+}
+.pin{
+    border-radius: 3px;
+}
 .circle{
     border-radius: 50%;
     width: 36px;
     height: 36px;
-    padding: 15px;
+    padding: 8px;
+    margin-left: 5px;
     background: #fff;
     border: 1px solid rgb(236, 234, 234);
     text-align: center;
@@ -93,6 +100,9 @@ body {
     opacity: 0.8;
     display: flex;
     justify-content: space-between;
+}
+.left{
+    padding-left: 20px;
 }
 .fa-user{
     padding-left: 15px;
@@ -185,7 +195,7 @@ a{
     color: rgb(231, 84, 108);
 }
 .details{
-    font-size: 16px !important;
+    font-size: 14px !important;
     padding: 5px;
     font-weight: 400;
    
@@ -193,11 +203,14 @@ a{
 .table-1{
     width: 100%;
 }
+.table-2{
+    width: 100%;
+}
 .equal{
     width:50%;
 }
 .equal-1{
-    width:30%;
+    width:50%;
     border-right: 1px solid rgb(228, 218, 218);
 }
 .small{
@@ -232,8 +245,7 @@ a{
 }
 .progress{
     height: 5px;
-    width: 40%;
-    
+    width: 40%; 
 }
 .fonts{
     font-size: 16px !important;
@@ -391,6 +403,15 @@ a{
     padding: 50px;
     padding-top: 5px;
     display: none;
+}
+.card-icon
+{
+    position:absolute;
+    background-color:white;
+    top:94%;
+    left:3%;
+    font-size:9px;
+    padding:0px 2px;
 }
 .content-list-1{
     position: absolute;
