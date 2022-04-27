@@ -781,19 +781,25 @@
 					<div class="nav-item-6">
 						<a class="nav-link active text-dark fw-bold small-font ps-3 mt-2 men" aria-current="page"
 							href="#">STUDIO<sup class="text-danger">NEW</sup>
-							<div class="content-list width-studio">
-								<div class="mt-2 ms-5 ">
-									<div>
-										<img src="asset/a.png" alt="logo" class="image">
+							<div class="studio">
+								<div class="mt-2 ps-5 content width border">
+									<span class="left ps-5 ms-5">
+										<span>
+											<img src="asset/a.png" class="image" alt="logo">
+										</span>
+										<span class="studio-font">
+											Studio
+										</span>
+									</span>
+									<div class="left ps-5 details">
+										Your daily inspiration for everything fashion
 									</div>
-									<div>
-										Studio
+									<div class="mb-3 left ps-5 ">
+										<img src="asset/studio.png" class="image-studio" alt="logo">
 									</div>
-									<div>
-										<img src="asset/studio.png" class="image-studio" alt="Studio image">
-									</div><br>
-									<div>
-										<div class="btn btn-outline-danger">Expand</div>
+									<br>
+									<div class="mb-3 left ps-5 ms-5">
+										<div class="btn btn-outline-dark btn-studio">Expand Studio <i class="fa-solid fa-chevron-right"></i></div>
 									</div>
 								</div>
 							</div>
@@ -801,25 +807,25 @@
 					</div>
 				</div>
 			</div>
-			<div class="d-sm-flex  d-none mt-1 d-flex justify-content-between">
-				<div class="ps-3">
-					<form>
-						<i class="fa fa-search"></i>
-						<input type="text" class="form-control-lg form-input size  ps-3 input-1"
-							placeholder="Search anything...">
+			<div class="mt-1 d-flex  justify-content-between pe-5 right">
+				<!-- <div > -->
+					<form class="border-line">
+						<i class="fa-solid fa-magnifying-glass"></i>
+						<input type="text" class="form-control-lg form-input size  ps-3 bg-light input-1"
+							placeholder="Search for products, brands and more..">
 					</form>
-				</div>
-				<div class="gap">
+				<!-- </div> -->
+				<div class="gap d-lg-flex  d-none">
 					<i class="fa-regular fa-user text-muted "></i><br>
-					<b class=" small-font">Profile</b>
+					<div class="small-font ps-2">Profile</div>
 				</div>
-				<div class="gap">
+				<div class="gap d-lg-flex  d-none">
 					<i class="fa-regular fa-heart text-muted "></i><br>
-					<b class=" small-font ">Wishlist</b>
+					<div class=" small-font ps-1 ">Wishlist</div>
 				</div>
-				<div class="gap">
+				<div class="gap d-lg-flex  d-none">
 					<i class="fa-solid fa-bag-shopping text-muted "></i><br>
-					<b class="small-font ">Bag</b>
+					<div class="small-font ps-1 fw-normal">Bag</div>
 				</div>
 			</div>
 		</div>
@@ -847,19 +853,19 @@
 	<div class="row">
 		<div class="container-fluid col-lg-7  ">
 			<div class="row row-cols-2 mb-2 ">
-				<img src="asset/img-1.jpg" alt="fig1" class=" px-0">
-				<img src="asset/img2.webp" alt="fig2" class="image-fluid">
+				<img src="asset/img-1.jpg" alt="fig1" class=" px-0 zoom">
+				<img src="asset/img2.webp" alt="fig2" class="image-fluid zoom">
 			</div>
 			<div class="row row-cols-2 mb-2">
-				<img src="asset/img3.webp" alt="fig3" class="img-fluid px-0">
-				<img src="asset/img4.webp" alt="fig4" class="img-fluid">
+				<img src="asset/img3.webp" alt="fig3" class="img-fluid px-0 zoom">
+				<img src="asset/img4.webp" alt="fig4" class="img-fluid zoom">
 			</div>
 			<div class="row row-cols-2 mb-2">
-				<img src="asset/img5.jpg" alt="fig5" class="img-fluid px-0">
-				<img src="asset/img6.webp" alt="fig6" class="img-fluid">
+				<img src="asset/img5.jpg" alt="fig5" class="img-fluid px-0 zoom">
+				<img src="asset/img6.webp" alt="fig6" class="img-fluid zoom">
 			</div>
 			<div class="row row-cols-2 mb-2">
-				<img src="asset/img7.webp" alt="fig7" class="img-fluid px-0">
+				<img src="asset/img7.webp" alt="fig7" class="img-fluid px-0 zoom">
 			</div>
 		</div>
 		<div class="container-fluid col-lg-5">
@@ -1251,11 +1257,21 @@
 					<div class="fonts mt-3">
 						Customer Photos(682)
 					</div>
-					<div class=" col-sm-6 images">
-						<img src="asset/img2.webp" class="resize image fluid" alt="Customer-image-1">
-						<img src="asset/img3.webp" class="resize image fluid" alt="Customer-image-2">
-						<img src="asset/img4.webp" class="resize image fluid" alt="Customer-image-3">
-						<img src="asset/img2.webp" class="resize image fluid" alt="Customer-image-4">
+					<div class=" col-sm-6 images d-flex">
+						<div>
+							<img src="asset/img2.webp" class="resize image fluid" alt="Customer-image-1">
+						</div>
+						<div>
+							<img src="asset/img3.webp" class="resize image fluid" alt="Customer-image-2">
+						</div>
+						<div>
+							<img src="asset/img4.webp" class="resize image fluid" alt="Customer-image-3">
+						</div>
+						<div class="bg-image">
+							<div class=" more">
+								+682
+							</div>
+						</div>
 					</div>
 					<div class="fonts mt-3">
 						Customer Reviews (5021)
@@ -1349,7 +1365,6 @@
 							</div>
 						</div>
 					</div>
-
 				</div>
 				<hr>
 				<div>
@@ -1374,13 +1389,11 @@
 			</div>
 		</div>
 	</div>
-	<!-- </div>
-	</div> -->
 	<div class="font-1 fw-bolder ps-2">
 		SIMILAR PRODUCTS
 	</div>
 	<div class="row  row-col-1 row-cols-sm-2 row-col-md-3 row-cols-lg-5   pt-3">
-		<div class="card-section">
+		<div class="card-section mb-5">
 			<div class="card">
 				<div class="card-top">
 					<img class="card-img-top" src="asset/pic-1.webp" alt="Card image">
@@ -1400,7 +1413,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="card-section">
+		<div class="card-section mb-5">
 			<div class="card">
 				<div class="card-top">
 					<img class="card-img-top" src="asset/pic-2.webp" alt="Card image">
@@ -1420,7 +1433,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="card-section">
+		<div class="card-section mb-5">
 			<div class="card">
 				<div class="card-top">
 					<img class="card-img-top" src="asset/pic-3.webp" alt="Card image">
@@ -1440,7 +1453,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="card-section">
+		<div class="card-section mb-5">
 			<div class="card">
 				<div class="card-top">
 					<img class="card-img-top" src="asset/pic-4.webp" alt="Card image">
@@ -1460,7 +1473,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="card-section">
+		<div class="card-section mb-5">
 			<div class="card">
 				<div class="card-top">
 					<img class="card-img-top" src="asset/pic-5.jpg" alt="Card image">
@@ -1480,7 +1493,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="card-section">
+		<div class="card-section mb-5">
 			<div class="card">
 				<div class="card-top">
 					<img class="card-img-top" src="asset/pic-6.webp" alt="Card image">
@@ -1500,7 +1513,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="card-section">
+		<div class="card-section mb-5">
 			<div class="card">
 				<div class="card-top">
 					<img class="card-img-top" src="asset/pic-7.webp" alt="Card image">
@@ -1520,7 +1533,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="card-section">
+		<div class="card-section mb-5">
 			<div class="card">
 				<div class="card-top">
 					<img class="card-img-top" src="asset/pic-8.webp" alt="Card image">
@@ -1540,7 +1553,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="card-section">
+		<div class="card-section mb-5">
 			<div class="card">
 				<div class="card-top">
 					<img class="card-img-top" src="asset/pic-9.jpg" alt="Card image">
@@ -1560,7 +1573,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="card-section">
+		<div class="card-section mb-5">
 			<div class="card">
 				<div class="card-top">
 					<img class="card-img-top" src="asset/pic-10.webp" alt="Card image">
@@ -1580,7 +1593,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="card-section">
+		<div class="card-section mb-5">
 			<div class="card">
 				<div class="card-top">
 					<img class="card-img-top" src="asset/pic-11.webp" alt="Card image">
@@ -1600,7 +1613,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="card-section">
+		<div class="card-section mb-5">
 			<div class="card">
 				<div class="card-top">
 					<img class="card-img-top" src="asset/pic-12.jpg" alt="Card image">
@@ -1620,7 +1633,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="card-section">
+		<div class="card-section mb-5">
 			<div class="card">
 				<div class="card-top">
 					<img class="card-img-top" src="asset/pic-13.webp" alt="Card image">
@@ -1640,7 +1653,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="card-section">
+		<div class="card-section mb-5">
 			<div class="card">
 				<div class="card-top">
 					<img class="card-img-top" src="asset/pic-14.webp" alt="Card image">
@@ -1660,7 +1673,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="card-section">
+		<div class="card-section mb-5">
 			<div class="card">
 				<div class="card-top">
 					<img class="card-img-top" src="asset/pic-15.webp" alt="Card image">
@@ -1703,11 +1716,11 @@
 	</div><br>
 
 	<div class="row  row-col-1 row-cols-sm-2 row-col-md-3 row-cols-lg-5   pt-3">
-		<div class="card-section">
+		<div class="card-section mb-5">
 			<div class="card">
 				<div class="card-top">
 					<img class="card-img-top" src="asset/pic-16.webp" alt="Card image">
-					<div class="card-icon">
+					<div class="card-icon1">
 						<span>4.1</span>
 						<i class="fa-solid fa-star card-star"></i>
 					</div>
@@ -1724,11 +1737,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="card-section">
+		<div class="card-section mb-5">
 			<div class="card">
 				<div class="card-top">
 					<img class="card-img-top" src="asset/pic-17.jpg" alt="Card image">
-					<div class="card-icon">
+					<div class="card-icon1">
 						<span>4.2</span>
 						<i class="fa-solid fa-star card-star"></i>
 					</div>
@@ -1744,11 +1757,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="card-section">
+		<div class="card-section mb-5">
 			<div class="card">
 				<div class="card-top">
 					<img class="card-img-top" src="asset/pic-18.webp" alt="Card image">
-					<div class="card-icon">
+					<div class="card-icon1">
 						<span>4.1</span>
 						<i class="fa-solid fa-star card-star"></i>
 					</div>
@@ -1764,11 +1777,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="card-section">
+		<div class="card-section mb-5">
 			<div class="card">
 				<div class="card-top">
 					<img class="card-img-top" src="asset/pic-19.jpg" alt="Card image">
-					<div class="card-icon">
+					<div class="card-icon1">
 						<span>4.2</span>
 						<i class="fa-solid fa-star card-star"></i>
 					</div>
@@ -1784,11 +1797,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="card-section">
+		<div class="card-section mb-5">
 			<div class="card">
 				<div class="card-top">
 					<img class="card-img-top" src="asset/pic-20.jpg" alt="Card image">
-					<div class="card-icon">
+					<div class="card-icon1">
 						<span>4.7</span>
 						<i class="fa-solid fa-star card-star"></i>
 					</div>
@@ -1805,11 +1818,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="card-section">
+		<div class="card-section mb-5">
 			<div class="card">
 				<div class="card-top">
 					<img class="card-img-top" src="asset/pic-20.jpg" alt="Card image">
-					<div class="card-icon">
+					<div class="card-icon1">
 						<span>4.1</span>
 						<i class="fa-solid fa-star card-star"></i>
 					</div>
@@ -1826,11 +1839,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="card-section">
+		<div class="card-section mb-5">
 			<div class="card">
 				<div class="card-top">
 					<img class="card-img-top" src="asset/pic-21.jpg" alt="Card image">
-					<div class="card-icon">
+					<div class="card-icon1">
 						<span>4.2</span>
 						<i class="fa-solid fa-star card-star"></i>
 					</div>
@@ -1846,11 +1859,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="card-section">
+		<div class="card-section mb-5">
 			<div class="card">
 				<div class="card-top">
 					<img class="card-img-top" src="asset/pic-22.jpg" alt="Card image">
-					<div class="card-icon">
+					<div class="card-icon1">
 						<span>4.3</span>
 						<i class="fa-solid fa-star card-star"></i>
 					</div>
@@ -1866,11 +1879,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="card-section">
+		<div class="card-section mb-5">
 			<div class="card">
 				<div class="card-top">
 					<img class="card-img-top" src="asset/pic-23.jpg" alt="Card image">
-					<div class="card-icon">
+					<div class="card-icon1">
 						<span>4.1</span>
 						<i class="fa-solid fa-star card-star"></i>
 					</div>
@@ -1887,11 +1900,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="card-section">
+		<div class="card-section mb-5">
 			<div class="card">
 				<div class="card-top">
 					<img class="card-img-top" src="asset/pic-24.jpg" alt="Card image">
-					<div class="card-icon">
+					<div class="card-icon1">
 						<span>4.5</span>
 						<i class="fa-solid fa-star card-star"></i>
 					</div>
@@ -1908,11 +1921,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="card-section">
+		<div class="card-section mb-5">
 			<div class="card">
 				<div class="card-top">
 					<img class="card-img-top" src="asset/pic-20.jpg" alt="Card image">
-					<div class="card-icon">
+					<div class="card-icon1">
 						<span>4.1</span>
 						<i class="fa-solid fa-star card-star"></i>
 					</div>
@@ -1929,11 +1942,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="card-section">
+		<div class="card-section mb-5">
 			<div class="card">
 				<div class="card-top">
 					<img class="card-img-top" src="asset/pic-25.jpg" alt="Card image">
-					<div class="card-icon">
+					<div class="card-icon1">
 						<span>4.2</span>
 						<i class="fa-solid fa-star card-star"></i>
 					</div>
@@ -1949,11 +1962,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="card-section">
+		<div class="card-section mb-5">
 			<div class="card">
 				<div class="card-top">
 					<img class="card-img-top" src="asset/pic-20.jpg" alt="Card image">
-					<div class="card-icon">
+					<div class="card-icon1">
 						<span>4.2</span>
 						<i class="fa-solid fa-star card-star"></i>
 					</div>
@@ -1970,11 +1983,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="card-section">
+		<div class="card-section mb-5">
 			<div class="card">
 				<div class="card-top">
 					<img class="card-img-top" src="asset/pic-27.jpg" alt="Card image">
-					<div class="card-icon">
+					<div class="card-icon1">
 						<span>4.2</span>
 						<i class="fa-solid fa-star card-star"></i>
 					</div>
@@ -1990,11 +2003,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="card-section">
+		<div class="card-section mb-5">
 			<div class="card">
 				<div class="card-top">
 					<img class="card-img-top" src="asset/pic-20.jpg" alt="Card image">
-					<div class="card-icon">
+					<div class="card-icon1">
 						<span>4.1</span>
 						<i class="fa-solid fa-star card-star"></i>
 					</div>
