@@ -31,7 +31,9 @@ body {
 .size {
     width: 90%;
 }
-
+.image-size{
+    width: 380px;
+}
 .fa-search {
     position: absolute;
     opacity: 0.3;
