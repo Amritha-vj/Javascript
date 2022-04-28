@@ -129,7 +129,7 @@ body {
 }
 
 .btn-2 {
-    width: 40%;
+    width: 30%;
     border-radius: 4px;
     background-color: white;
     border: 1px solid #eeebec;
@@ -172,20 +172,18 @@ body {
     padding-left: 15px;
     color: black !important;
     font-size: 18px;
-    /* opacity: 0.3; */
+   
 }
 
 .fa-heart {
     padding-left: 15px;
     color: black !important;
     font-size: 20px;
-    /* opacity: 0.3; */
 }
 
 .fa-bag-shopping {
     font-size: 20px;
     color: black !important;
-    /* opacity: 0.3; */
     padding-left: 6px;
 }
 
