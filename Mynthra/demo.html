@@ -15,7 +15,7 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top d-flex justify-content-between">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top d-flex justify-content-between padding-null">
 		<div class="container-fluid">
 			<div class="nav-item padding mt-3 ">
 				<img src="asset/a.png" alt="logo" class="image">
@@ -67,7 +67,7 @@
 				</span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<div class="d-flex me-auto d-flex mb-2 mb-lg-0">
+				<div class="d-flex margin-t me-auto d-flex mb-2 mb-lg-0">
 					<div class="nav-item-1 col-auto">
 						<a class="nav-link active text-dark fw-bold small-font ps-3 mt-2 men" aria-current="page"
 							href="#">MEN
@@ -781,25 +781,24 @@
 					<div class="nav-item-6 col-auto">
 						<a class="nav-link active text-dark fw-bold small-font ps-3 mt-2 men" aria-current="page"
 							href="#">STUDIO<sup class="text-danger">NEW</sup>
-							<div class="studio">
-								<div class="mt-2 ps-5 content width border">
-									<span class="left ps-5 ms-5">
+							<div class="studio left">
+								<div class="mt-2 ps-5 content studio-width border">
+									<span class="text-center">
 										<span>
-											<img src="asset/a.png" class="image" alt="logo">
-										</span>
-										<span class="studio-font">
-											Studio
+											<img src="asset/logo.svg" class="svg-image rounded mx-auto d-block" alt="logo">
 										</span>
 									</span>
-									<div class="left ps-5 details">
+									<div class="text-center ps-5 details mb-2 ">
 										Your daily inspiration for everything fashion
 									</div>
-									<div class="mb-3 left ps-5 ">
+									<div class="mb-3">
 										<img src="asset/studio.png" class="image-studio" alt="logo">
 									</div>
 									<br>
-									<div class="mb-3 left ps-5 ms-5">
-										<div class="btn btn-outline-dark btn-studio">Expand Studio <i class="fa-solid fa-chevron-right"></i></div>
+									<div class="mb-3  text-center">
+										<div class="btn btn-outline-dark btn-studio left">Expand Studio
+											<i class="fa-solid fa-chevron-right"></i>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -808,16 +807,16 @@
 				</div>
 			</div>
 			<div class="mt-1 d-flex  justify-content-between  right">
-					<form class="border-line">
-						<i class="fa-solid fa-magnifying-glass"></i>
-						<input type="text" class="form-control-lg form-input size  ps-3 bg-light input-1"
-							placeholder="Search for products, brands and more..">
-					</form>
+				<form class="border-line bg-light ">
+					<i class="fa-solid fa-magnifying-glass"></i>
+					<input type="text" class="form-control-lg form-input size  ps-3 bg-light input-1"
+						placeholder="Search for products, brands and more..">
+				</form>
 				<div class="gap d-lg-block  d-none">
 					<div><i class="fa-regular fa-user text-muted "></i></div>
 					<div class="small-font ps-2">Profile</div>
 				</div>
-				<div class="gap d-lg-block  d-sm-none">
+				<div class="gap d-lg-block  d-none">
 					<i class="fa-regular fa-heart text-muted "></i><br>
 					<div class=" small-font ps-1 ">Wishlist</div>
 				</div>
@@ -878,7 +877,7 @@
 						Men Teal Blue Printed Pure Cotton T-shirt
 					</h5>
 				</div>
-				<div class="d-flex border border-2 width p-1">
+				<div class="d-flex border border-2 width-rating p-1 ps-3">
 					<div>
 						4.6 &nbsp;<i class="fa-solid fa-star mb-2"></i>&nbsp;|
 					</div>
@@ -917,10 +916,11 @@
 				</div>
 				<br><br>
 				<div class="buttons mt-5 d-flex ">
-					<button type="button" class="btn btn-danger p-3 btn-1">
-						<i class="fa-solid fa-bag-shopping"></i>&nbsp;ADD TO BAG
+					<button type="button" class=" btn-danger p-3 btn-1">
+						<span><i class="fa-solid fa-bag-shopping"></i>&nbsp;</span>
+						<span class="fw-bold">ADD TO BAG</span>
 					</button> &nbsp;
-					<button type="button" class="btn btn-outline-secondary p-3">
+					<button type="button" class="btn-2 fw-bold p-3">
 						<i class="fa-regular fa-heart text-muted ms-1"></i>&nbsp; WISHLIST
 					</button>
 				</div>
@@ -1315,7 +1315,8 @@
 							<div>
 								<p class="details mt-1">
 									Awesome and dark t-shirt. I think it is a better
-									T-Shirt for me.. Its nice. The material and fitting is superb. Super comfy to wear all day long.
+									T-Shirt for me.. Its nice. The material and fitting is superb. Super comfy to wear
+									all day long.
 									<i class="fa-solid fa-party-horn"></i>
 								</p>
 							</div>
@@ -1344,7 +1345,7 @@
 						<div>
 							<div>
 								<p class="details mt-1">All is okay. But if the printed colour is more darker; then it
-									will be perfect.Overall fitting is a little loose for size M but that's okay. I'm 
+									will be perfect.Overall fitting is a little loose for size M but that's okay. I'm
 									happy with this product and i will recommend it to you.
 								</p>
 							</div>
@@ -1381,7 +1382,7 @@
 						Omnitech Retail
 					</span>
 				</div>
-				<div class="details-1 ms-2">
+				<div class="details-1 mt-1 fw-bold ms-2">
 					View Supplier Information
 				</div>
 			</div>
@@ -2155,9 +2156,11 @@
 					</div>
 					<div class="gap-1">
 						<span>
-							<h6>Popular searches<hr></h6>
+							<h6>Popular searches
+								<hr>
+							</h6>
 						</span>
-						
+
 					</div>
 					<div class="gap-1">
 						<span>
