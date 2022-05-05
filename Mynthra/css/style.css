@@ -2,7 +2,7 @@
     box-sizing: border-box;
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 13px;
-   
+
 }
 
 body {
@@ -31,40 +31,19 @@ body {
 .size {
     width: 90%;
 }
-.image-size{
+
+.image-size {
     width: 380px;
 }
+
 .fa-search {
     position: absolute;
     opacity: 0.3;
     margin-left: 11px;
     margin-top: 16px;
 }
-/* .nav-link{
-    padding-top: 25px;
-    
-} */
-/* .nav-item :hover{
-    /* /* border-bottom: 3px solid red; */
-/* position: relative; 
 
-}
-.nav-item{
-    /* border-bottom: 3px solid red; */
-/* }  */
-/* .nav-link :hover{
-    border-bottom: 3px solid red;
-  
-}
-.nav-link :hover{
-    border-bottom: 3px solid red;
-    
-}
-.nav-link :hover .content-list{
-    visibility: visible;
-}  */
 .hover {
-    /* display: none; */
     font-size: 12px;
 }
 
@@ -75,24 +54,27 @@ body {
 .hover :hover .content-list {
     visibility: visible;
 }
-.border-line{
+
+.border-line {
     box-shadow: 0 5px 5px #f5f3f3;
     background-color: #f5f3f3;
 }
-.background{
+
+.background {
     background-color: #f5f3f3;
 }
-.fa-magnifying-glass{
+
+.fa-magnifying-glass {
     opacity: 0.3;
     background-color: #f5f3f3;
 }
+
 .input-1 {
     border: none;
     outline: none;
 }
 
 .input-1::placeholder {
-    /* padding-left: 20px; */
     opacity: 0.3;
     font-size: 13px !important;
 }
@@ -117,7 +99,6 @@ body {
 }
 
 .buttons {
-    /* width: 50%; */
     margin-top: 20px;
 }
 
@@ -133,8 +114,6 @@ body {
     border-radius: 4px;
     background-color: white;
     border: 1px solid #eeebec;
-   
-    
 }
 
 .none {
@@ -157,7 +136,6 @@ body {
 }
 
 .padding {
-    /* padding-left: 10px; */
     margin-left: 30px;
     opacity: 0.8;
     display: flex;
@@ -172,7 +150,7 @@ body {
     padding-left: 15px;
     color: black !important;
     font-size: 18px;
-   
+
 }
 
 .fa-heart {
@@ -515,58 +493,70 @@ a {
     opacity: 0.7;
     font-size: 12px !important;
 }
-
-/* .border-line{
-    border-bottom: 2px solid red;
-} */
-.width-rating{
+.width-rating {
     width: 150px
 }
-.width-3{
+
+.width-3 {
     width: 50%;
 }
-.width-2{
+
+.width-2 {
     width: 50%;
 }
-.padding-null{
+
+.padding-null {
     padding: 0;
 }
-.margin-t{
+
+.margin-t {
     margin-top: 9px;
 }
-.nav-item-1{
+
+.nav-item-1 {
     padding-bottom: 6px;
 }
-.nav-item-2{
+
+.nav-item-2 {
     padding-bottom: 6px;
 }
-.nav-item-3{
+
+.nav-item-3 {
     padding-bottom: 6px;
 }
-.nav-item-4{
+
+.nav-item-4 {
     padding-bottom: 6px;
 }
-.nav-item-5{
+
+.nav-item-5 {
     padding-bottom: 6px;
 }
-.nav-item-6{
+
+.nav-item-6 {
     padding-bottom: 6px;
 }
+
 .nav-item-1:hover {
-    border-bottom: 4px solid rgb(235, 50, 50); 
+    border-bottom: 4px solid rgb(235, 50, 50);
 }
+
 .nav-item-2:hover {
     border-bottom: 4px solid rgb(233, 61, 204);
 }
+
 .nav-item-3:hover {
     border-bottom: 4px solid rgb(231, 120, 45);
 }
+
 .nav-item-4:hover {
     border-bottom: 4px solid rgb(180, 180, 23);
 }
+
 .nav-item-5:hover {
     border-bottom: 4px solid rgb(9, 177, 177);
 }
+
 .nav-item-6:hover {
     border-bottom: 4px solid rgb(235, 50, 50);
 }
@@ -607,11 +597,13 @@ a {
     box-shadow: 0px 0px 4px grey;
     left: 109px;
     top: 58px;
-   
+
 }
-.pl-1{
+
+.pl-1 {
     padding-left: 55px;
 }
+
 .content {
     visibility: hidden;
     position: fixed;
@@ -622,12 +614,15 @@ a {
     left: 200px;
     top: 55px;
 }
-.svg-image{
+
+.svg-image {
     width: 20%;
 }
-.studio-width{
+
+.studio-width {
     padding-left: 30%;
 }
+
 .men:hover .content-list {
     visibility: visible;
 }
@@ -638,7 +633,6 @@ a {
 
 .image-studio {
     width: 500px
-   
 }
 
 .btn-expand {
@@ -654,6 +648,7 @@ a {
     font-size: 9px;
     padding: 0px 2px;
 }
+
 .card-icon1 {
     position: absolute;
     background-color: white;
@@ -680,28 +675,33 @@ a {
     font-size: 24px !important;
     font-weight: 400;
 }
-.right{
+
+.right {
     padding-right: 30px;
 }
+
 .zoom {
     transition: transform .2s;
     margin: 0 auto;
-  }
-  .zoom:hover {
-    transform: scale(1.05); 
-   
-  }
-  .bg-image{
-    background: 
-    linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../asset/img2.webp");
+}
+
+.zoom:hover {
+    transform: scale(1.05);
+
+}
+
+.bg-image {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../asset/img2.webp");
     background-size: cover;
     width: 60px;
 }
-.more{
+
+.more {
     position: absolute;
     /* top: 10%; */
     color: white;
-    font-size: 12px!important;
+    font-size: 12px !important;
     margin-top: 18px;
     margin-left: 10px;
 }
