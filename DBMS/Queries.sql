@@ -1,6 +1,6 @@
 CREATE DATABASE EMPLOYEE;
 CREATE TABLE EMPLOYEES (
-	emp_id INTEGER PRIMARY KEY,
+    emp_id INTEGER PRIMARY KEY,
     emp_name VARCHAR(15),
     job_name VARCHAR(10),
     manager_id INTEGER,
