@@ -684,10 +684,8 @@ a {
     transition: transform .2s;
     margin: 0 auto;
 }
-
 .zoom:hover {
     transform: scale(1.05);
-
 }
 
 .bg-image {
@@ -696,7 +694,6 @@ a {
     background-size: cover;
     width: 60px;
 }
-
 .more {
     position: absolute;
     /* top: 10%; */
